@@ -19,8 +19,8 @@ const Navbar = () => {
                 </div>
                 <div className="menu" >
                     <ul>
-                        <Link to='/'> Customer Stories </Link>
-                        <Link to='/'> About Us</Link>
+                        <Link to='/blog-list'> Customer Stories </Link>
+                        <Link to='/aboutus'> About Us</Link>
 
                     </ul>
                     <div className="butDiv">

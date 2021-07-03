@@ -8,7 +8,7 @@ const InTheNews = () => {
     return (
         <div className="container mt-20">
   <h4 className="heading-md text-5xl mb-7">In The News</h4>
-  <div className="in-the-news-row row">
+  <div className="in-the-news-row gap-x-0 row">
     <div className="col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
       <div
         className="card card-in-the-news rounded text-white w-100"

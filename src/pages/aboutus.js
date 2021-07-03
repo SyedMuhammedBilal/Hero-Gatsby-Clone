@@ -17,7 +17,6 @@ export default function AboutUs() {
             <Ourinvestor />
             <Why />
             <Viewjob />
-
         </Layout>
 
     )
