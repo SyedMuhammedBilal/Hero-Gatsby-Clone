@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 import '../../styles/nav/nav.css'
 import MenuIcon from '@material-ui/icons/Menu';
 import Hamburger from './hamburger'
@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="Navbar" >
                 <div className="logo" >
                     {!show ? null :
-                        <h1>Life And Half</h1>}
+                        <h1 onClick={() => navigate('/')}>Life And Half</h1>}
                 </div>
                 <div className="menu" >
                     <ul>

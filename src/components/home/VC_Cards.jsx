@@ -1,24 +1,48 @@
 import React, { useState } from 'react'
 import Heading from '../../Reusable-Components/Heading'
 
-
 import '../../styles/home/vcCards.css'
 import '../../styles/home/customerStories.css'
 import {CardData} from './dummy-data/cardData'
 import Arrow from '../../svgs/arrow'
+import { useStaticQuery, graphql } from "gatsby"
 
 const Cards = () => {
-    const [card, setCard] = useState(CardData)
+    const VC_Cards_Query = useStaticQuery(graphql`
+        {
+          allMarkdownRemark(filter: {frontmatter: {path: {eq: "/home/vc-cards"}}}) {
+            edges {
+              node {
+                frontmatter {
+                  heading
+                  CardData {
+                    title
+                    icon
+                    description
+                  }
+                  path
+                }
+              }
+            }
+          }
+        }
+    `)
+
+    const data = VC_Cards_Query?.allMarkdownRemark?.edges[0]?.node
+    const VcCards = VC_Cards_Query?.allMarkdownRemark?.edges[0]?.node.frontmatter.CardData
+
+    const [card, setCard] = useState(VcCards)
+
     return (
         <div className="mb-20">
         <div className="mb-10">
-            <Heading heading="WITH YOU. EVERY STEP OF THE WAY." />
+            <Heading heading={data?.frontmatter?.heading} />
             
             {/* cards */}
             <div className="vc__cards-container">
                 {card.map((items, index) => {
                     return (
-                        <div className="vc__cards-wrapper">
+                        <div key={index} className="vc__cards-wrapper">
                             <div className="vc__cards-img">
                                 <img src={items.icon} />
                             </div>

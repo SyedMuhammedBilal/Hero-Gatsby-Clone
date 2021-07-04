@@ -10,6 +10,7 @@ import Cards from "../components/home/VC_Cards"
 import GetStarted from "../components/home/GetStarted"
 
 import Slider from "react-slick";
+import { useStaticQuery, graphql } from "gatsby"
 
 import '../../node_modules/slick-carousel/slick/slick.css'
 import '../../node_modules/slick-carousel/slick/slick-theme.css'
@@ -29,6 +30,32 @@ export default function Home() {
     autoplay: true,
   };
 
+  const SliderQuery = useStaticQuery(graphql`
+    {
+      allMarkdownRemark(filter: {frontmatter: {path: {eq: "/home/slider"}}}) {
+        edges {
+          node {
+            id
+            frontmatter {
+              SliderContent {
+                title
+                slogan
+                image
+                icon
+                color
+                backgroundColor
+              }
+              heading
+              subHeading
+            }
+          }
+        }
+      }
+    }
+  `)
+    
+  const data = SliderQuery?.allMarkdownRemark?.edges[0]?.node
+
 
   return (
     <Layout>
@@ -37,8 +64,11 @@ export default function Home() {
       <Qoute />
       <CustomerStories />
       <Slider className="mt-10">
-        <SliderPost />
-        <SliderPost />
+        {data?.frontmatter?.SliderContent.map((items, index) => {
+          return (
+            <SliderPost key={index} items={items} />
+          )
+        })}
       </Slider>
       <SliderIcons />
       <Cards />

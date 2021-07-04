@@ -1,25 +1,46 @@
-import {Link} from 'gatsby'
 import React from 'react'
 import '../../styles/home/getStarted.css'
+import { useStaticQuery, graphql } from "gatsby"
 
 const GetStarted = () => {
+  const GetStartedQuery = useStaticQuery(graphql`
+    {
+      allMarkdownRemark(filter: {frontmatter: {path: {eq: "/home/get-started"}}}) {
+        edges {
+          node {
+            frontmatter {
+              title
+              subTitle
+              para1
+              para2
+              icon
+              heading
+              image
+            }
+          }
+        }
+      }
+    }
+  `)
+  const data = GetStartedQuery?.allMarkdownRemark?.edges[0]?.node.frontmatter
+
     return (
         <section style={{ overflowY: 'hidden' }} className="text-gray-600 body-font getStarted__container">
           <div className="container px-5 py-24 mx-auto">
             <div className="xl:w-2/2 lg:w-3/4 w-full mx-auto text-center">
                 <div className="getStarted__icon">
-                    <img src="https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationWatchADemo.svg" />
+                    <img src={data?.image} />
                 </div>
 
               <h2 style={{ overflowY: 'hidden' }} className="font-medium title-font tracking-wider text-sm getStarted__description">
-                GET STARTED
+                {data?.heading}
               </h2>
 
               <p className="getStarted__title">
-                Take your shopping experience to the next level.
+                {data?.title}
               </p>
               <p className="getStarted__title">
-                Available for all eCommerce platforms.
+                {data?.subTitle}
               </p>
 
                 <div className="getStarted-button">
@@ -30,10 +51,10 @@ const GetStarted = () => {
 
                 <div className="getStarted__end-slogan mt-10">
                     <div className="getStarted__smallIcon">
-                        <img src="https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icShopify.svg" />
+                        <img src={data?.icon} />
                     </div>
                     <div className="getStarted-paragraph">
-                        <p>Running on Shopify?</p> <a>Learn more.</a>
+                        <p>{data?.para1}</p> <a>{data?.para2}</a>
                     </div>
                 </div>
             </div>

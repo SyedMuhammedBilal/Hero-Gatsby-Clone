@@ -14,9 +14,7 @@
 
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js")),
-  "component---src-pages-aboutus-js": preferDefault(__webpack_require__(/*! ./src/pages/aboutus.js */ "./src/pages/aboutus.js")),
-  "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")),
-  "component---src-pages-news-js": preferDefault(__webpack_require__(/*! ./src/pages/news.js */ "./src/pages/news.js"))
+  "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))
   }
 
 
@@ -9456,435 +9454,6 @@ const ItalicHeading = ({
 
 /***/ }),
 
-/***/ "./src/components/about/header.js":
-/*!****************************************!*\
-  !*** ./src/components/about/header.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_about_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/about/header.css */ "./src/styles/about/header.css");
-/* harmony import */ var _styles_about_header_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_about_header_css__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-function Header() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "header"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "img",
-    src: "https://static.tildacdn.com/tild3731-3038-4362-b362-353130656366/image_116.png"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "headerPara"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Berlin based, Razor buys Amazon FBA merchants that impress with their high product quality and strong customer ratings.")));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
-
-/***/ }),
-
-/***/ "./src/components/about/ourinvestor.js":
-/*!*********************************************!*\
-  !*** ./src/components/about/ourinvestor.js ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_about_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/about/header.css */ "./src/styles/about/header.css");
-/* harmony import */ var _styles_about_header_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_about_header_css__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-function Ourinvestor() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "text-gray-600 body-font",
-    style: {
-      backgroundColor: "#eeeeee"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "investorstitle"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "invh1"
-  }, "OUR INVESTORS "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "invh2"
-  }, "We successfully raised a total of over 450 million dollar in debt and equity.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "object-cover object-center rounded",
-    alt: "hero",
-    src: "https://thumb.tildacdn.com/tild3934-3137-4364-b862-323361363438/-/resize/560x/-/format/webp/Group_3108.png"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-8 leading-relaxed",
-    style: {
-      fontWeight: "500",
-      fontSize: "15px",
-      textAlign: "left"
-    }
-  }, "After successfully raising a pre-seed funding, we managed to secure our Series A funding with a combination of debt and equity including our existing shareholder RedAlpine, 468 Capital, Presight Capital, Global Founders Capital and Claret Capital Partners. Including our series A funding we have raised a total of $70 million in debt and equity. Followed by our recent series A+ funding of additional $400 million of capital by Victory Park Capital Advisors and BlackRock. This way we have the opportunity to significantly scale the business. Our shareholder contribute their extensive e-commerce expertise as well as their networks of institutional star investors. In addition, we also have prominent angel investors on board, including serial entrepreneurs & investors such as Mato Peric (CARS24, Choco, Scalable Capital etc.) and Roman Khan (Linjer, Raycon, Lazada etc.) as well as capital market experts such as Manuel Stotz (CEO Kingsway Capital), Stefan Jung (CIO Antler), the Scalable Capital founders Erik Podzuweit & Florian Prucker, and others."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "invtend"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "invttitle"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "comma"
-  }, " \""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, " We firmly believe and know from experience that not just the founders, but the entire shareholder group is crucial for a company to succeed"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Suleman Ahmed, Co Founder Bilal-Tech"))));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Ourinvestor);
-
-/***/ }),
-
-/***/ "./src/components/about/ourstory.js":
-/*!******************************************!*\
-  !*** ./src/components/about/ourstory.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-
-function Ourstory() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "text-gray-600 body-font"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "object-cover object-center rounded",
-    alt: "hero",
-    src: "https://static.tildacdn.com/tild3862-3862-4261-b831-303163616337/ENDOMRAZOR_MOODS_846.jpg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-900",
-    style: {
-      color: "#3b66ea"
-    }
-  }, "Our Story"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-8 leading-relaxed",
-    style: {
-      fontWeight: "500",
-      fontSize: "20px",
-      textAlign: "left"
-    }
-  }, "We use significant growth capital, paired with extensive e-commerce expertise in order to take these acquired merchants to the next stage of development. Razor is the new-age consumer holding with a clear strategic focus on specific product categories, long-term value enhancement and first-class customer satisfaction. Our young team has a strong vision, excitement for growth and new challenges."))));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Ourstory);
-
-/***/ }),
-
-/***/ "./src/components/about/ourvalues.js":
-/*!*******************************************!*\
-  !*** ./src/components/about/ourvalues.js ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_about_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/about/header.css */ "./src/styles/about/header.css");
-/* harmony import */ var _styles_about_header_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_about_header_css__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-function Ourvalues() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "text-gray-600 body-font"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "titlestyle",
-    style: {
-      display: "flex",
-      flexDirection: 'column',
-      marginLeft: "4%"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    style: {
-      fontSize: "25px",
-      color: "#3b66ea",
-      marginBottom: "3%"
-    }
-  }, "OUR VALUES & BELIEFS "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    style: {
-      fontSize: "28px",
-      color: "black",
-      width: "50%"
-    }
-  }, "With empathy, qualification and perseverance we are here to take over your Amazon FBA business.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-8 leading-relaxed",
-    style: {
-      fontWeight: "500",
-      fontSize: "20px",
-      textAlign: "left"
-    }
-  }, "We believe that almost anyone can aquire companies. However not everyone has access to the resources and expertise to keep a business viable and make it grow. That is what we are here for! With 10+ years of experience in e-commerce, building brands and guiding companies we are confident that we can push your business to the next level.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "object-cover object-center rounded",
-    alt: "hero",
-    src: "https://thumb.tildacdn.com/tild3632-3238-4161-b963-373663373661/-/resize/560x/-/format/webp/ENDOMRAZOR_MOODS_844.jpg"
-  }))));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Ourvalues);
-
-/***/ }),
-
-/***/ "./src/components/about/teamprofile.js":
-/*!*********************************************!*\
-  !*** ./src/components/about/teamprofile.js ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_about_team_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/about/team.css */ "./src/styles/about/team.css");
-/* harmony import */ var _styles_about_team_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_about_team_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _my_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./my.jpeg */ "./src/components/about/my.jpeg");
-
-
-
-
-function Teamprofile() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "containers"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "teamheading"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Exceptional team with 10+ years of experience in e-commerce, building brands and guiding companies."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "We strive to grow, build leading companies and are a team on a joint mission")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "rowww"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-lg-4 col-md-6 teamCont"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__item set-bg",
-    style: {
-      backgroundImage: `url('${_my_jpeg__WEBPACK_IMPORTED_MODULE_2__.default}')`
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__text"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Furkan Giray"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Web Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean ultricies nisl sit amet."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-facebook"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-twitter"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-instagram"
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-lg-4 col-md-6 teamCont"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__item set-bg",
-    style: {
-      backgroundImage: 'url("https://www.hawtcelebs.com/wp-content/uploads/2021/04/ester-exposito-for-elle-magazine-spain-may-2021-3.jpg")'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__text"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Furkan Giray"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Web Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean ultricies nisl sit amet."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-facebook"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-twitter"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-instagram"
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-lg-4 col-md-6 teamCont"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__item set-bg",
-    style: {
-      backgroundImage: 'url("https://wallpapercave.com/wp/wp7905062.jpg")'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__text"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Furkan Giray"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Web Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean ultricies nisl sit amet."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-facebook"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-twitter"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-instagram"
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-lg-4 col-md-6 teamCont"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__item set-bg",
-    style: {
-      backgroundImage: 'url("https://www.hawtcelebs.com/wp-content/uploads/2021/04/ester-exposito-for-elle-magazine-spain-may-2021-3.jpg")'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__text"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Furkan Giray"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Web Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean ultricies nisl sit amet."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-facebook"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-twitter"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-instagram"
-  }))))))));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Teamprofile);
-
-/***/ }),
-
-/***/ "./src/components/about/viewjob.js":
-/*!*****************************************!*\
-  !*** ./src/components/about/viewjob.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-
-function Viewjob() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "text-gray-600 body-font",
-    style: {
-      backgroundColor: "#2863e9",
-      paddingTop: "2%",
-      paddingBottom: "3%"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900",
-    style: {
-      color: "white",
-      fontSize: "35px",
-      width: "70%"
-    }
-  }, "We are experiencing a continous growth spurt and are always looking for talents with a hands-on mentality to enrich our team."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-8 leading-relaxed",
-    style: {
-      color: "white"
-    }
-  }, "Join us on our mission full of growth."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex justify-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    className: "ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
-  }, "View Job")))));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Viewjob);
-
-/***/ }),
-
-/***/ "./src/components/about/why.js":
-/*!*************************************!*\
-  !*** ./src/components/about/why.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_about_why_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/about/why.css */ "./src/styles/about/why.css");
-/* harmony import */ var _styles_about_why_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_about_why_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _whycover_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./whycover.jpg */ "./src/components/about/whycover.jpg");
-
-
-
-
-function Why() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "why"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "whycont"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "whyh1"
-  }, " WHY LIFE AND HALF"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "whyh2"
-  }, "We know how to navigate the Amazon ecosystem, stabilize brands and enable them to grow. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "whyp"
-  }, "We are not a broker but your potential buyer. We see ourselves as partners of entrepreneurs whose products occupy a successful niche. From founders, for founders - that is our main principle. ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: _whycover_jpg__WEBPACK_IMPORTED_MODULE_2__.default,
-    className: "whyimg"
-  }));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Why);
-
-/***/ }),
-
 /***/ "./src/components/home/BlockWrapper.jsx":
 /*!**********************************************!*\
   !*** ./src/components/home/BlockWrapper.jsx ***!
@@ -9971,37 +9540,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Feature": () => (/* binding */ Feature)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _dummy_data_featureData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dummy-data/featureData */ "./src/components/home/dummy-data/featureData.js");
+/* harmony import */ var _public_page_data_sq_d_3788451428_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/3788451428.json */ "./public/page-data/sq/d/3788451428.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
+ // import {FeatureData} from './dummy-data/featureData'
 
 const Feature = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  var _FeaturesQuery$allMar, _FeaturesQuery$allMar2;
+
+  const FeaturesQuery = _public_page_data_sq_d_3788451428_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = FeaturesQuery === null || FeaturesQuery === void 0 ? void 0 : (_FeaturesQuery$allMar = FeaturesQuery.allMarkdownRemark) === null || _FeaturesQuery$allMar === void 0 ? void 0 : (_FeaturesQuery$allMar2 = _FeaturesQuery$allMar.edges[0]) === null || _FeaturesQuery$allMar2 === void 0 ? void 0 : _FeaturesQuery$allMar2.node;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("section", {
     className: "text-gray-600 body-font",
     style: {
       backgroundColor: '#111'
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "container px-5 py-24 mx-auto"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "text-center mb-20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h1", {
     className: "sm:text-6xl text-2xl font-medium title-font text-gray-400"
-  }, "CHAT + VIDEO SHOPPING"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+  }, data.frontmatter.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h1", {
     className: "sm:text-6xl text-2xl font-medium title-font text-white mb-4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", null, "THE FUTURE OF RETAIL"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("i", null, data.frontmatter.subTitle))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
-  }, _dummy_data_featureData__WEBPACK_IMPORTED_MODULE_1__.FeatureData.map((items, index) => {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, data.frontmatter.FeatureData.map((items, index) => {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+      key: index,
       className: "p-4 md:w-1/3 flex flex-col text-center items-center"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       style: {
         width: '10rem',
         overflowY: 'hidden'
       },
-      className: "w-20 h-20 inline-flex items-center justify-center rounded-full mb-10 flex-shrink-0"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      className: "w-20 h-28 inline-flex items-center justify-center rounded-full mb-10 flex-shrink-0"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
       src: items.icon,
       style: {
         width: '200px',
@@ -10010,15 +9585,15 @@ const Feature = () => {
       },
       className: "w-90 h-90",
       viewBox: "0 0 50 50"
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       className: "flex-grow"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h2", {
       style: {
         letterSpacing: '1px',
         wordSpacing: '2px'
       },
       className: "text-white sm:text-2xl text-lg title-font font-medium mb-3"
-    }, items.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    }, items.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
       style: {
         fontWeight: 300
       },
@@ -10040,7 +9615,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _public_page_data_sq_d_3433709924_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/3433709924.json */ "./public/page-data/sq/d/3433709924.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_home_getStarted_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/home/getStarted.css */ "./src/styles/home/getStarted.css");
@@ -10050,6 +9625,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const GetStarted = () => {
+  var _GetStartedQuery$allM, _GetStartedQuery$allM2;
+
+  const GetStartedQuery = _public_page_data_sq_d_3433709924_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = GetStartedQuery === null || GetStartedQuery === void 0 ? void 0 : (_GetStartedQuery$allM = GetStartedQuery.allMarkdownRemark) === null || _GetStartedQuery$allM === void 0 ? void 0 : (_GetStartedQuery$allM2 = _GetStartedQuery$allM.edges[0]) === null || _GetStartedQuery$allM2 === void 0 ? void 0 : _GetStartedQuery$allM2.node.frontmatter;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("section", {
     style: {
       overflowY: 'hidden'
@@ -10062,17 +9641,17 @@ const GetStarted = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "getStarted__icon"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationWatchADemo.svg"
+    src: data === null || data === void 0 ? void 0 : data.image
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h2", {
     style: {
       overflowY: 'hidden'
     },
     className: "font-medium title-font tracking-wider text-sm getStarted__description"
-  }, "GET STARTED"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
+  }, data === null || data === void 0 ? void 0 : data.heading), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
     className: "getStarted__title"
-  }, "Take your shopping experience to the next level."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
+  }, data === null || data === void 0 ? void 0 : data.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
     className: "getStarted__title"
-  }, "Available for all eCommerce platforms."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+  }, data === null || data === void 0 ? void 0 : data.subTitle), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "getStarted-button"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("button", {
     className: "getStarted-btn mt-10"
@@ -10081,10 +9660,10 @@ const GetStarted = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "getStarted__smallIcon"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icShopify.svg"
+    src: data === null || data === void 0 ? void 0 : data.icon
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "getStarted-paragraph"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "Running on Shopify?"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", null, "Learn more."))))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, data === null || data === void 0 ? void 0 : data.para1), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", null, data === null || data === void 0 ? void 0 : data.para2))))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (GetStarted);
@@ -10102,14 +9681,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Reusable-Components/Button */ "./src/Reusable-Components/Button.js");
-/* harmony import */ var _Reusable_Components_ItalicHeading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Reusable-Components/ItalicHeading */ "./src/Reusable-Components/ItalicHeading.jsx");
-/* harmony import */ var _styles_home_middleContent_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/home/middleContent.css */ "./src/styles/home/middleContent.css");
-/* harmony import */ var _styles_home_middleContent_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_home_middleContent_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _svgs_arrow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../svgs/arrow */ "./src/svgs/arrow.js");
-/* harmony import */ var _dummy_data_midContent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dummy-data/midContent */ "./src/components/home/dummy-data/midContent.js");
+/* harmony import */ var _public_page_data_sq_d_2838905889_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/2838905889.json */ "./public/page-data/sq/d/2838905889.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Reusable-Components/Button */ "./src/Reusable-Components/Button.js");
+/* harmony import */ var _Reusable_Components_ItalicHeading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Reusable-Components/ItalicHeading */ "./src/Reusable-Components/ItalicHeading.jsx");
+/* harmony import */ var _styles_home_middleContent_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/home/middleContent.css */ "./src/styles/home/middleContent.css");
+/* harmony import */ var _styles_home_middleContent_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_home_middleContent_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _svgs_arrow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../svgs/arrow */ "./src/svgs/arrow.js");
+/* harmony import */ var _dummy_data_midContent__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./dummy-data/midContent */ "./src/components/home/dummy-data/midContent.js");
+
 
 
 
@@ -10118,58 +9699,66 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const MiddleContent = () => {
+  var _MidContentQuery$allM, _MidContentQuery$allM2, _data$frontmatter;
+
   const {
     0: midContent,
     1: setMidContent
-  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_dummy_data_midContent__WEBPACK_IMPORTED_MODULE_5__.MidContent);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(_dummy_data_midContent__WEBPACK_IMPORTED_MODULE_6__.MidContent);
+  const MidContentQuery = _public_page_data_sq_d_2838905889_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = MidContentQuery === null || MidContentQuery === void 0 ? void 0 : (_MidContentQuery$allM = MidContentQuery.allMarkdownRemark) === null || _MidContentQuery$allM === void 0 ? void 0 : (_MidContentQuery$allM2 = _MidContentQuery$allM.edges[0]) === null || _MidContentQuery$allM2 === void 0 ? void 0 : _MidContentQuery$allM2.node;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "middle-comtent"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Reusable_Components_ItalicHeading__WEBPACK_IMPORTED_MODULE_2__.default, {
-    heading: "BE THERE. VIRTUALLY.",
-    desc1: "Your customers love to watch, chat and video call.",
-    desc2: "Now they can shop with you the same way."
-  }), midContent.map((items, index) => {
-    return items.left ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Reusable_Components_ItalicHeading__WEBPACK_IMPORTED_MODULE_3__.default, {
+    heading: data.frontmatter.title,
+    desc1: data.frontmatter.desc,
+    desc2: data.frontmatter.desc2
+  }), data === null || data === void 0 ? void 0 : (_data$frontmatter = data.frontmatter) === null || _data$frontmatter === void 0 ? void 0 : _data$frontmatter.MidContent.map((items, index) => {
+    return items.left ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("section", {
+      key: index,
       className: "text-gray-600 body-font"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       className: "container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       className: "lg:flex-grow md:w-1/2 lg:pr-60 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
       className: "w-25 h-25 mb-8 object-cover object-center inline-block",
       src: items.icon,
       alt: "pic"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
       style: {
         letterSpacing: '1px',
         wordSpacing: '2px'
       },
       className: "text-gray sm:text-2xl mb-3"
-    }, items.slogan), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    }, items.slogan), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h1", {
       style: {
         textAlign: 'left'
       },
       className: "title-font sm:text-6xl font-black text-3xl mb-5 font-large text-gray-900"
-    }, items.title, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", {
+    }, items.title, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("br", {
       className: "hidden lg:inline-block"
-    }), items.title2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    }), items.title2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
       style: {
         textAlign: 'left'
       },
-      className: "mb-8 leading-relaxed"
-    }, items.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "mb-20 leading-relaxed"
+    }, items.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+      style: {
+        marginTop: '2rem'
+      },
       className: "middle-content__button"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("button", {
       className: "middle-content-btn"
-    }, "explore this feature ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_4__.default, null), " "))), items.image ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, "explore this feature ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_5__.default, null), " "))), items.image ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       class: "lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
       class: "object-cover object-center rounded",
       alt: "hero",
       src: items.image
-    })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       className: "lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("video", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("video", {
       className: "object-cover object-center rounded",
       preload: "auto",
       playsinline: "",
@@ -10177,21 +9766,21 @@ const MiddleContent = () => {
       autoPlay: true,
       muted: true,
       poster: "https://www.usehero.com/wp-content/uploads/2021/02/imgInspireStatic@2x.jpg"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("source", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("source", {
       src: items.video
-    }))))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    }))))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("section", {
       className: "text-gray-600 body-font"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       className: "container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-    }, items.image ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, items.image ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       class: "lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
       class: "object-cover object-center rounded",
       alt: "hero",
       src: items.image
-    })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       className: "lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("video", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("video", {
       className: "object-cover object-center rounded",
       preload: "auto",
       playsinline: "",
@@ -10199,40 +9788,43 @@ const MiddleContent = () => {
       autoPlay: true,
       muted: true,
       poster: "https://www.usehero.com/wp-content/uploads/2021/02/imgInspireStatic@2x.jpg"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("source", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("source", {
       src: items.video
-    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       style: {
         marginTop: '1rem'
       },
       className: "lg:flex-grow md:w-1/2 lg:pl-60 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
       className: "w-25 h-25 mb-8 object-cover object-center inline-block",
       src: items.icon,
       alt: "pic"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
       style: {
         letterSpacing: '1px',
         wordSpacing: '2px'
       },
       className: "mb-8 leading-relaxed"
-    }, items.slogan), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    }, items.slogan), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h1", {
       style: {
         textAlign: 'left'
       },
       className: "title-font sm:text-6xl font-black text-3xl mb-5 font-large text-gray-900"
-    }, items.title, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", {
+    }, items.title, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("br", {
       className: "hidden lg:inline-block"
-    }), items.title2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    }), items.title2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
       style: {
         textAlign: 'left'
       },
       className: "mb-8 leading-relaxed"
-    }, items.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, items.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+      style: {
+        marginTop: '2rem'
+      },
       className: "middle-content__button"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("button", {
       className: "middle-content-btn"
-    }, "explore this feature ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_4__.default, null), " ")))));
+    }, "explore this feature ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_5__.default, null), " ")))));
   }));
 };
 
@@ -10251,31 +9843,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_home_Qoute_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/home/Qoute.css */ "./src/styles/home/Qoute.css");
-/* harmony import */ var _styles_home_Qoute_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_home_Qoute_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _public_page_data_sq_d_491656419_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/491656419.json */ "./public/page-data/sq/d/491656419.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _styles_home_Qoute_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/home/Qoute.css */ "./src/styles/home/Qoute.css");
+/* harmony import */ var _styles_home_Qoute_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_home_Qoute_css__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
 const Qoute = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  var _QouteQuery$allMarkdo, _QouteQuery$allMarkdo2, _data$frontmatter, _data$frontmatter2;
+
+  const QouteQuery = _public_page_data_sq_d_491656419_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = QouteQuery === null || QouteQuery === void 0 ? void 0 : (_QouteQuery$allMarkdo = QouteQuery.allMarkdownRemark) === null || _QouteQuery$allMarkdo === void 0 ? void 0 : (_QouteQuery$allMarkdo2 = _QouteQuery$allMarkdo.edges[0]) === null || _QouteQuery$allMarkdo2 === void 0 ? void 0 : _QouteQuery$allMarkdo2.node;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("section", {
     style: {
       overflowY: 'hidden'
     },
     className: "text-gray-600 body-font qoute__container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "container px-5 py-24 mx-auto"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "xl:w-2/2 lg:w-3/4 w-full mx-auto text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "leading-relaxed qoute__title"
-  }, "Shoppers love HERO\xAE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
+    className: "leading-relaxed qoute__title mb-20"
+  }, data === null || data === void 0 ? void 0 : (_data$frontmatter = data.frontmatter) === null || _data$frontmatter === void 0 ? void 0 : _data$frontmatter.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h2", {
     style: {
       overflowY: 'hidden'
     },
-    className: "font-medium title-font tracking-wider text-sm qoute__description"
-  }, "\u201CJULIE MADE THE DREADED EXPERIENCE OF ONLINE SHOPPING SO COMFORTING AS IF I WERE THERE!\u201D"))));
+    className: "font-medium title-font tracking-wider text-sm qoute__description mt-16"
+  }, data === null || data === void 0 ? void 0 : (_data$frontmatter2 = data.frontmatter) === null || _data$frontmatter2 === void 0 ? void 0 : _data$frontmatter2.description))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Qoute);
@@ -10293,26 +9891,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_home_sliderIcons_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/home/sliderIcons.css */ "./src/styles/home/sliderIcons.css");
-/* harmony import */ var _styles_home_sliderIcons_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_home_sliderIcons_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _dummy_data_sliderIcons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dummy-data/sliderIcons */ "./src/components/home/dummy-data/sliderIcons.js");
+/* harmony import */ var _public_page_data_sq_d_1147747176_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/1147747176.json */ "./public/page-data/sq/d/1147747176.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _styles_home_sliderIcons_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/home/sliderIcons.css */ "./src/styles/home/sliderIcons.css");
+/* harmony import */ var _styles_home_sliderIcons_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_home_sliderIcons_css__WEBPACK_IMPORTED_MODULE_2__);
 
 
-
+ // import { SliderIcons } from './dummy-data/sliderIcons'
 
 const SliderIcon = () => {
+  var _SliderIconsQuery$all, _SliderIconsQuery$all2;
+
+  const SliderIconsQuery = _public_page_data_sq_d_1147747176_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = SliderIconsQuery === null || SliderIconsQuery === void 0 ? void 0 : (_SliderIconsQuery$all = SliderIconsQuery.allMarkdownRemark) === null || _SliderIconsQuery$all === void 0 ? void 0 : (_SliderIconsQuery$all2 = _SliderIconsQuery$all.edges[0]) === null || _SliderIconsQuery$all2 === void 0 ? void 0 : _SliderIconsQuery$all2.node.frontmatter.SliderIcons;
   const {
     0: icons,
     1: setIcons
-  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_dummy_data_sliderIcons__WEBPACK_IMPORTED_MODULE_2__.SliderIcons);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(data);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "sliderIcons__container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "sliderIcons__wrapper"
   }, icons.map((items, index) => {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
+      key: index,
       src: items.img,
       alt: "icons"
     });
@@ -10338,34 +9941,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_home_sliderPost_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/home/sliderPost.css */ "./src/styles/home/sliderPost.css");
 /* harmony import */ var _styles_home_sliderPost_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_home_sliderPost_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
 
 
 
-
-const SliderPost = () => {
+const SliderPost = ({
+  items
+}) => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "sliderPost__mainContainer mt-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: {
+      backgroundColor: items === null || items === void 0 ? void 0 : items.backgroundColor,
+      color: items === null || items === void 0 ? void 0 : items.color
+    },
     className: "sliderPost__container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "sliderPost__image"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/imgCarouselCredoAltCrop@2x-933x1024.jpg"
+    src: items === null || items === void 0 ? void 0 : items.image
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "sliderPost__content-wrapper"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "sliderPost__Title"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("blockquote", {
     className: "sliderPost__blockQoute"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "\"One of credos's store managers had an $800 sale on her first try\"")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, items === null || items === void 0 ? void 0 : items.title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "sliderPost__bottomContent"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "sliderPost__smallText"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Dawn Dobras, CEO - Credo Beauty")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, items === null || items === void 0 ? void 0 : items.slogan)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "sliderPost__icon"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerCredo.svg"
+    src: items === null || items === void 0 ? void 0 : items.icon
   })))))));
 };
 
@@ -10384,15 +9991,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Reusable_Components_Heading__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Reusable-Components/Heading */ "./src/Reusable-Components/Heading.jsx");
-/* harmony import */ var _styles_home_vcCards_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/home/vcCards.css */ "./src/styles/home/vcCards.css");
-/* harmony import */ var _styles_home_vcCards_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_home_vcCards_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _styles_home_customerStories_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/home/customerStories.css */ "./src/styles/home/customerStories.css");
-/* harmony import */ var _styles_home_customerStories_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_home_customerStories_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _dummy_data_cardData__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dummy-data/cardData */ "./src/components/home/dummy-data/cardData.js");
-/* harmony import */ var _svgs_arrow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../svgs/arrow */ "./src/svgs/arrow.js");
+/* harmony import */ var _public_page_data_sq_d_1435072483_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/1435072483.json */ "./public/page-data/sq/d/1435072483.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Reusable_Components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Reusable-Components/Heading */ "./src/Reusable-Components/Heading.jsx");
+/* harmony import */ var _styles_home_vcCards_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/home/vcCards.css */ "./src/styles/home/vcCards.css");
+/* harmony import */ var _styles_home_vcCards_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_home_vcCards_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_home_customerStories_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/home/customerStories.css */ "./src/styles/home/customerStories.css");
+/* harmony import */ var _styles_home_customerStories_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_home_customerStories_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _dummy_data_cardData__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dummy-data/cardData */ "./src/components/home/dummy-data/cardData.js");
+/* harmony import */ var _svgs_arrow__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../svgs/arrow */ "./src/svgs/arrow.js");
+
 
 
 
@@ -10401,35 +10010,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Cards = () => {
+  var _VC_Cards_Query$allMa, _VC_Cards_Query$allMa2, _VC_Cards_Query$allMa3, _VC_Cards_Query$allMa4, _data$frontmatter;
+
+  const VC_Cards_Query = _public_page_data_sq_d_1435072483_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = VC_Cards_Query === null || VC_Cards_Query === void 0 ? void 0 : (_VC_Cards_Query$allMa = VC_Cards_Query.allMarkdownRemark) === null || _VC_Cards_Query$allMa === void 0 ? void 0 : (_VC_Cards_Query$allMa2 = _VC_Cards_Query$allMa.edges[0]) === null || _VC_Cards_Query$allMa2 === void 0 ? void 0 : _VC_Cards_Query$allMa2.node;
+  const VcCards = VC_Cards_Query === null || VC_Cards_Query === void 0 ? void 0 : (_VC_Cards_Query$allMa3 = VC_Cards_Query.allMarkdownRemark) === null || _VC_Cards_Query$allMa3 === void 0 ? void 0 : (_VC_Cards_Query$allMa4 = _VC_Cards_Query$allMa3.edges[0]) === null || _VC_Cards_Query$allMa4 === void 0 ? void 0 : _VC_Cards_Query$allMa4.node.frontmatter.CardData;
   const {
     0: card,
     1: setCard
-  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_dummy_data_cardData__WEBPACK_IMPORTED_MODULE_4__.CardData);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(VcCards);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "mb-20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "mb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Reusable_Components_Heading__WEBPACK_IMPORTED_MODULE_1__.default, {
-    heading: "WITH YOU. EVERY STEP OF THE WAY."
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Reusable_Components_Heading__WEBPACK_IMPORTED_MODULE_2__.default, {
+    heading: data === null || data === void 0 ? void 0 : (_data$frontmatter = data.frontmatter) === null || _data$frontmatter === void 0 ? void 0 : _data$frontmatter.heading
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "vc__cards-container"
   }, card.map((items, index) => {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+      key: index,
       className: "vc__cards-wrapper"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       className: "vc__cards-img"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
       src: items.icon
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       className: "vc__cards-h1"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, items.title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h1", null, items.title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       className: "vc__cards-p"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, items.description)));
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, items.description)));
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "vc__cards-button"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("button", {
     className: "vc__cards-btn mt-10"
-  }, "MEET OUR TEAM", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_5__.default, null))));
+  }, "MEET OUR TEAM", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_6__.default, null))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Cards);
@@ -10459,33 +10074,6 @@ const CardData = [{
   icon: 'https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationCardGlobalScale.svg',
   title: 'GLOBAL SCALE',
   description: 'Hero is used globally by brands in more than 31 markets across 14 languages.'
-}];
-
-/***/ }),
-
-/***/ "./src/components/home/dummy-data/featureData.js":
-/*!*******************************************************!*\
-  !*** ./src/components/home/dummy-data/featureData.js ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FeatureData": () => (/* binding */ FeatureData)
-/* harmony export */ });
-const FeatureData = [{
-  icon: 'https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationFutureMakeEcommerceHuman.svg',
-  title: 'The Human Touch',
-  description: 'Bring the personal touch of in-store shopping to your online store.'
-}, {
-  icon: 'https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationFutureCompetitiveEdge.svg',
-  title: 'Your Competitive Edge',
-  description: 'Set your online experience apart – empower your store staff, experts or influencers to assist online shoppers.'
-}, {
-  icon: 'https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationFutureSuperchargeSales.svg',
-  title: 'Supercharge Your Sales',
-  description: 'With Hero, one in four customers will go on to buy and spend up to 70% more.'
 }];
 
 /***/ }),
@@ -10553,35 +10141,6 @@ const MidContent = [{
 
 /***/ }),
 
-/***/ "./src/components/home/dummy-data/sliderIcons.js":
-/*!*******************************************************!*\
-  !*** ./src/components/home/dummy-data/sliderIcons.js ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "SliderIcons": () => (/* binding */ SliderIcons)
-/* harmony export */ });
-const SliderIcons = [{
-  img: 'https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Nike-1.svg'
-}, {
-  img: 'https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Levis-1.svg'
-}, {
-  img: 'https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Sephora-1.svg'
-}, {
-  img: 'https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48HermanMiller-1.svg'
-}, {
-  img: 'https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Annoushka.svg'
-}, {
-  img: 'https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48JonathanAdler.svg'
-}, {
-  img: 'https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Three.svg'
-}];
-
-/***/ }),
-
 /***/ "./src/components/home/hero-section.jsx":
 /*!**********************************************!*\
   !*** ./src/components/home/hero-section.jsx ***!
@@ -10593,15 +10152,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Reusable-Components/Button */ "./src/Reusable-Components/Button.js");
-/* harmony import */ var _video_heroVideo_mp4__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../video/heroVideo.mp4 */ "./src/video/heroVideo.mp4");
-/* harmony import */ var _styles_home_hero_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/home/hero.css */ "./src/styles/home/hero.css");
-/* harmony import */ var _styles_home_hero_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_home_hero_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _dummy_data_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dummy-data/icons */ "./src/components/home/dummy-data/icons.js");
-/* harmony import */ var _BlockWrapper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./BlockWrapper */ "./src/components/home/BlockWrapper.jsx");
-/* harmony import */ var _Feature__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Feature */ "./src/components/home/Feature.jsx");
+/* harmony import */ var _public_page_data_sq_d_203516583_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/203516583.json */ "./public/page-data/sq/d/203516583.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Reusable-Components/Button */ "./src/Reusable-Components/Button.js");
+/* harmony import */ var _video_heroVideo_mp4__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../video/heroVideo.mp4 */ "./src/video/heroVideo.mp4");
+/* harmony import */ var _styles_home_hero_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/home/hero.css */ "./src/styles/home/hero.css");
+/* harmony import */ var _styles_home_hero_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_home_hero_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _dummy_data_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dummy-data/icons */ "./src/components/home/dummy-data/icons.js");
+/* harmony import */ var _BlockWrapper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./BlockWrapper */ "./src/components/home/BlockWrapper.jsx");
+/* harmony import */ var _Feature__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Feature */ "./src/components/home/Feature.jsx");
+
 
 
 
@@ -10611,59 +10172,64 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Hero = () => {
+  var _HeroSectionQuery$all, _HeroSectionQuery$all2, _HeroSectionQuery$all3, _HeroSectionQuery$all4, _HeroSectionQuery$all5, _HeroSectionQuery$all6, _data$frontmatter, _data$frontmatter2, _data$frontmatter3;
+
+  const HeroSectionQuery = _public_page_data_sq_d_203516583_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const imageQueryState = HeroSectionQuery === null || HeroSectionQuery === void 0 ? void 0 : (_HeroSectionQuery$all = HeroSectionQuery.allMarkdownRemark) === null || _HeroSectionQuery$all === void 0 ? void 0 : (_HeroSectionQuery$all2 = _HeroSectionQuery$all.edges[0]) === null || _HeroSectionQuery$all2 === void 0 ? void 0 : (_HeroSectionQuery$all3 = _HeroSectionQuery$all2.node) === null || _HeroSectionQuery$all3 === void 0 ? void 0 : (_HeroSectionQuery$all4 = _HeroSectionQuery$all3.frontmatter) === null || _HeroSectionQuery$all4 === void 0 ? void 0 : _HeroSectionQuery$all4.images;
   const {
     0: iconState,
     1: setIconsState
-  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_dummy_data_icons__WEBPACK_IMPORTED_MODULE_4__.iconsData); // const [isDesktop, setDesktop] = useState(window.innerWidth > 900)
-  // const updateMedia = () => {
-  //     if (window !== "undefined") {
-  //         setDesktop(window.innerWidth > 1000);
-  //     } else { return null }
-  // };
-  // useEffect(() => {
-  //     window.addEventListener("resize", updateMedia);
-  // //     return () => window.removeEventListener("resize", updateMedia);
-  // });
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(imageQueryState);
+  const data = HeroSectionQuery === null || HeroSectionQuery === void 0 ? void 0 : (_HeroSectionQuery$all5 = HeroSectionQuery.allMarkdownRemark) === null || _HeroSectionQuery$all5 === void 0 ? void 0 : (_HeroSectionQuery$all6 = _HeroSectionQuery$all5.edges[0]) === null || _HeroSectionQuery$all6 === void 0 ? void 0 : _HeroSectionQuery$all6.node;
+  console.log(imageQueryState);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("section", {
     className: "hero__container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "hero__titles"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "the real way"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "to shop virtually."), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("span", null, data.frontmatter.title), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("span", null, data === null || data === void 0 ? void 0 : (_data$frontmatter = data.frontmatter) === null || _data$frontmatter === void 0 ? void 0 : _data$frontmatter.title2)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
     className: "hero__description"
-  }, "Add the IRL experience to your online store with the #1 virtual shopping platform."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, data === null || data === void 0 ? void 0 : (_data$frontmatter2 = data.frontmatter) === null || _data$frontmatter2 === void 0 ? void 0 : _data$frontmatter2.slogan), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "hero__buttons"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_2__.default, {
     title: "GET STARTED"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_2__.default, {
     title: "watch demo",
     background: true
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "hero__imgs"
   }, iconState.map((items, index) => {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       key: index,
       className: "hero__img"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
       src: items.img,
       alt: "images"
     }));
-  }))), "                    ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }))), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "hero__video"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("video", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("video", {
     preload: "auto",
     playsinline: "",
     loop: true,
     autoPlay: true,
     muted: true,
     poster: "https://www.usehero.com/wp-content/uploads/2021/04/imgHeroMainPortrait@2x.jpg"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("source", {
-    src: _video_heroVideo_mp4__WEBPACK_IMPORTED_MODULE_2__.default,
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("source", {
+    src: data === null || data === void 0 ? void 0 : (_data$frontmatter3 = data.frontmatter) === null || _data$frontmatter3 === void 0 ? void 0 : _data$frontmatter3.video,
     type: "video/mp4"
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_BlockWrapper__WEBPACK_IMPORTED_MODULE_5__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Feature__WEBPACK_IMPORTED_MODULE_6__.Feature, null));
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_BlockWrapper__WEBPACK_IMPORTED_MODULE_6__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Feature__WEBPACK_IMPORTED_MODULE_7__.Feature, null));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Hero);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Hero); // const [isDesktop, setDesktop] = useState(window.innerWidth > 900)
+// const updateMedia = () => {
+//     if (window !== "undefined") {
+//         setDesktop(window.innerWidth > 1000);
+//     } else { return null }
+// };
+// useEffect(() => {
+//     window.addEventListener("resize", updateMedia);
+// //     return () => window.removeEventListener("resize", updateMedia);
+// });
 
 /***/ }),
 
@@ -10760,12 +10326,14 @@ const Navbar = () => {
     className: "Navbar"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "logo"
-  }, !show ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Life And Half")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, !show ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    onClick: () => (0,gatsby__WEBPACK_IMPORTED_MODULE_1__.navigate)('/')
+  }, "Life And Half")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "menu"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/"
+    to: "/blog-list"
   }, " Customer Stories "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/"
+    to: "/aboutus"
   }, " About Us")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "butDiv"
   }, !show ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
@@ -10783,531 +10351,6 @@ const Navbar = () => {
 
 /***/ }),
 
-/***/ "./src/components/news/Feature.jsx":
-/*!*****************************************!*\
-  !*** ./src/components/news/Feature.jsx ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Feature": () => (/* binding */ Feature)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-const Feature = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "text-white body-font",
-    style: {
-      backgroundColor: '#7596e5'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container px-5 py-20 mx-auto"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "text-center mb-20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "sm:text-5xl text-2xl font-medium title-font text-white"
-  }, "Press Quotes")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "p-4 md:w-1/3 flex flex-col text-center items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      width: '10rem',
-      overflowY: 'hidden'
-    },
-    className: "w-20 h-20 inline-flex items-center justify-center rounded-full mb-10 flex-shrink-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/GQ.svg",
-    style: {
-      width: '200px',
-      height: '200px',
-      overflowY: 'hidden'
-    },
-    className: "w-50 h-50",
-    viewBox: "0 0 50 50"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex-grow"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    style: {
-      fontWeight: 300,
-      fontSize: '1.4rem'
-    },
-    className: "leading-relaxed text-base text-white"
-  }, "\u201CLike facetiming your favorite sales associate\u201D"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "p-4 md:w-1/3 flex flex-col text-center items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      width: '10rem',
-      overflowY: 'hidden'
-    },
-    className: "w-20 h-20 inline-flex items-center justify-center rounded-full mb-10 flex-shrink-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/WWD.svg",
-    style: {
-      width: '200px',
-      height: '200px',
-      overflowY: 'hidden'
-    },
-    className: "w-50 h-50",
-    viewBox: "0 0 50 50"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex-grow"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    style: {
-      fontWeight: 300,
-      fontSize: '1.4rem',
-      wordSpacing: '2px',
-      letterSpacing: '1px'
-    },
-    className: "leading-relaxed text-base text-white"
-  }, "\u201CHero \u2018humanizes\u2019 online shopping\u201D"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "p-4 md:w-1/3 flex flex-col text-center items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      width: '10rem',
-      overflowY: 'hidden'
-    },
-    className: "w-20 h-20 inline-flex items-center justify-center rounded-full mb-10 flex-shrink-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/SourcingJournal.svg",
-    style: {
-      width: '200px',
-      height: '200px',
-      overflowY: 'hidden'
-    },
-    className: "w-50 h-50",
-    viewBox: "0 0 50 50"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex-grow"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    style: {
-      fontWeight: 300,
-      fontSize: '1.4rem'
-    },
-    className: "leading-relaxed text-base text-white"
-  }, "\u201CShoppers are 21x more likely to buy through Hero\""))))));
-};
-
-/***/ }),
-
-/***/ "./src/components/news/InTheNews.jsx":
-/*!*******************************************!*\
-  !*** ./src/components/news/InTheNews.jsx ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_news_newsCards_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/news/newsCards.css */ "./src/styles/news/newsCards.css");
-/* harmony import */ var _styles_news_newsCards_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_news_newsCards_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_news_inTheNews_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/news/inTheNews.css */ "./src/styles/news/inTheNews.css");
-/* harmony import */ var _styles_news_inTheNews_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_news_inTheNews_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _svgs_arrow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../svgs/arrow */ "./src/svgs/arrow.js");
-
-
-
-
-
-const InTheNews = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container mt-20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", {
-    className: "heading-md text-5xl mb-7"
-  }, "In The News"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "in-the-news-row gap-x-0 row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#7a8c6d"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "p-5 bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/VogueBusiness.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "bg-transparent rounded-0 border-0 font-size-xl pt-20 pb-10 px-5"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      fontWeight: '600'
-    },
-    className: "mb-2 pb-1"
-  }, "VIP clienteling gets a tech makeover."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0 mt-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    style: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      textTransform: 'uppercase',
-      width: '10rem'
-    },
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://www.voguebusiness.com/technology/vip-clienteling-gets-a-tech-makeover",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_3__.default, null)))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#c29ce5"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/VogueBusiness.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "Post-pandemic playbook: Reviving US department stores."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://www.voguebusiness.com/consumers/post-pandemic-playbook-reviving-us-department-stores",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#035973"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/RetailOasis.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "Podcast Ep. 29 - Adam Levene, Founder of HERO\xAE."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://www.retailoasis.com/podcast/retail-podcast-hero-adam-levene",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#fcb09c"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/SourcingJournal.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "Virtual Shopping to the Rescue."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://issuu.com/sourcingjournalevents/docs/ri_21_copy_16.1_spreads",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#7596e5"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/TheIndustryFashion.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "Coronavirus closings create virtual consultation uptick in beauty."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://www.theindustry.fashion/liberty-officially-launches-virtual-shopping-experience-with-hero/",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#7a8c6d"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/ragtrader.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "Incu customers are 11 times more likely to buy because of this."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://www.ragtrader.com.au/news/incu-customers-are-11-times-more-likely-to-buy-because-of-this",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#c29ce5"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/WWD.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "Coronavirus closings create virtual consultation uptick in beauty."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://wwd.com/business-news/retail/hero-online-shopping-1234735264/",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#035973"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/Charged.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "Virtual shopping is set to be the next major trend in retail."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://www.chargedretail.co.uk/2021/01/05/virtual-shopping-is-set-to-be-the-next-major-trend-in-retail/",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#fcb09c"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/BOF.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "How to Build a One-on-One Relationship With Your Customer."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://www.businessoffashion.com/articles/retail/how-to-build-a-one-on-one-relationship-with-your-customer?utm_source=daily-digest-newsletter&utm_campaign=1687947019214980&utm_term=11&utm_medium=email",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More")))))));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (InTheNews);
-
-/***/ }),
-
-/***/ "./src/components/news/NewsCards.jsx":
-/*!*******************************************!*\
-  !*** ./src/components/news/NewsCards.jsx ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_news_newsCards_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/news/newsCards.css */ "./src/styles/news/newsCards.css");
-/* harmony import */ var _styles_news_newsCards_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_news_newsCards_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_blog_list_blogCard_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/blog-list/blogCard.css */ "./src/styles/blog-list/blogCard.css");
-/* harmony import */ var _styles_blog_list_blogCard_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_blog_list_blogCard_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _svgs_arrow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../svgs/arrow */ "./src/svgs/arrow.js");
-
-
-
-
-
-const NewsCards = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__mainHeading mb-52 mt-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "NEWSROOM")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__main"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__heading mb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "latest news")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "news__cards"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "news__cards_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/tif-axelarigato-300dpi-02_v3-800x450.jpeg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "news__card_title"
-  }, "newsroom"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__card_text"
-  }, "Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO\xAE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__btn card_btn"
-  }, "12-10-2021")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "news__cards_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/HeroxTedBakerxCNN-1-800x533.jpg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "news__card_title"
-  }, "newsroom"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__card_text"
-  }, "Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO\xAE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__btn card_btn"
-  }, "12-10-2021")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "news__cards_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/Blog-Web-1920x1280-Faherty-2_1-1.gif"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "news__card_title"
-  }, "newsroom"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__card_text"
-  }, "Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO\xAE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__btn card_btn"
-  }, "12-10-2021")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "news__cards_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/tif-axelarigato-300dpi-02_v3-800x450.jpeg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "news__card_title"
-  }, "newsroom"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__card_text"
-  }, "Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO\xAE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__btn card_btn"
-  }, "12-10-2021"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "blogCard-button"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    className: "blogCard-btn mt-10"
-  }, "load more"))));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NewsCards);
-
-/***/ }),
-
-/***/ "./src/pages/aboutus.js":
-/*!******************************!*\
-  !*** ./src/pages/aboutus.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ AboutUs)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _template_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/Layout */ "./src/template/Layout.js");
-/* harmony import */ var _components_about_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/about/header */ "./src/components/about/header.js");
-/* harmony import */ var _components_about_ourstory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/about/ourstory */ "./src/components/about/ourstory.js");
-/* harmony import */ var _components_about_ourvalues__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/about/ourvalues */ "./src/components/about/ourvalues.js");
-/* harmony import */ var _components_about_teamprofile__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/about/teamprofile */ "./src/components/about/teamprofile.js");
-/* harmony import */ var _components_about_ourinvestor__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/about/ourinvestor */ "./src/components/about/ourinvestor.js");
-/* harmony import */ var _components_about_why__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/about/why */ "./src/components/about/why.js");
-/* harmony import */ var _components_about_viewjob__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/about/viewjob */ "./src/components/about/viewjob.js");
-
-
-
-
-
-
-
-
-
-function AboutUs() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_template_Layout__WEBPACK_IMPORTED_MODULE_1__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_about_header__WEBPACK_IMPORTED_MODULE_2__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_about_ourstory__WEBPACK_IMPORTED_MODULE_3__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_about_ourvalues__WEBPACK_IMPORTED_MODULE_4__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_about_teamprofile__WEBPACK_IMPORTED_MODULE_5__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_about_ourinvestor__WEBPACK_IMPORTED_MODULE_6__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_about_why__WEBPACK_IMPORTED_MODULE_7__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_about_viewjob__WEBPACK_IMPORTED_MODULE_8__.default, null));
-}
-
-/***/ }),
-
 /***/ "./src/pages/index.js":
 /*!****************************!*\
   !*** ./src/pages/index.js ***!
@@ -11319,24 +10362,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Home)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_home_hero_section__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/home/hero-section */ "./src/components/home/hero-section.jsx");
-/* harmony import */ var _template_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../template/Layout */ "./src/template/Layout.js");
-/* harmony import */ var _components_home_MiddleContent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/home/MiddleContent */ "./src/components/home/MiddleContent.jsx");
-/* harmony import */ var _components_home_Qoute__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/home/Qoute */ "./src/components/home/Qoute.jsx");
-/* harmony import */ var _components_home_CustomerStories__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/home/CustomerStories */ "./src/components/home/CustomerStories.jsx");
-/* harmony import */ var _components_home_SliderPost__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/home/SliderPost */ "./src/components/home/SliderPost.jsx");
-/* harmony import */ var _components_home_SliderIcons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/home/SliderIcons */ "./src/components/home/SliderIcons.jsx");
-/* harmony import */ var _components_home_VC_Cards__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/home/VC_Cards */ "./src/components/home/VC_Cards.jsx");
-/* harmony import */ var _components_home_GetStarted__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/home/GetStarted */ "./src/components/home/GetStarted.jsx");
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
-/* harmony import */ var _node_modules_slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../node_modules/slick-carousel/slick/slick.css */ "./node_modules/slick-carousel/slick/slick.css");
-/* harmony import */ var _node_modules_slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_node_modules_slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _node_modules_slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../node_modules/slick-carousel/slick/slick-theme.css */ "./node_modules/slick-carousel/slick/slick-theme.css");
-/* harmony import */ var _node_modules_slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_node_modules_slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _styles_home_sliderPost_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../styles/home/sliderPost.css */ "./src/styles/home/sliderPost.css");
-/* harmony import */ var _styles_home_sliderPost_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_styles_home_sliderPost_css__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _public_page_data_sq_d_1656902362_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/1656902362.json */ "./public/page-data/sq/d/1656902362.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_home_hero_section__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/home/hero-section */ "./src/components/home/hero-section.jsx");
+/* harmony import */ var _template_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../template/Layout */ "./src/template/Layout.js");
+/* harmony import */ var _components_home_MiddleContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/home/MiddleContent */ "./src/components/home/MiddleContent.jsx");
+/* harmony import */ var _components_home_Qoute__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/home/Qoute */ "./src/components/home/Qoute.jsx");
+/* harmony import */ var _components_home_CustomerStories__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/home/CustomerStories */ "./src/components/home/CustomerStories.jsx");
+/* harmony import */ var _components_home_SliderPost__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/home/SliderPost */ "./src/components/home/SliderPost.jsx");
+/* harmony import */ var _components_home_SliderIcons__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/home/SliderIcons */ "./src/components/home/SliderIcons.jsx");
+/* harmony import */ var _components_home_VC_Cards__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/home/VC_Cards */ "./src/components/home/VC_Cards.jsx");
+/* harmony import */ var _components_home_GetStarted__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/home/GetStarted */ "./src/components/home/GetStarted.jsx");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
+/* harmony import */ var _node_modules_slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../node_modules/slick-carousel/slick/slick.css */ "./node_modules/slick-carousel/slick/slick.css");
+/* harmony import */ var _node_modules_slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_node_modules_slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _node_modules_slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../node_modules/slick-carousel/slick/slick-theme.css */ "./node_modules/slick-carousel/slick/slick-theme.css");
+/* harmony import */ var _node_modules_slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_node_modules_slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _styles_home_sliderPost_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../styles/home/sliderPost.css */ "./src/styles/home/sliderPost.css");
+/* harmony import */ var _styles_home_sliderPost_css__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_styles_home_sliderPost_css__WEBPACK_IMPORTED_MODULE_14__);
+
 
 
 
@@ -11352,6 +10397,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Home() {
+  var _SliderQuery$allMarkd, _SliderQuery$allMarkd2, _data$frontmatter;
+
   const settings = {
     dots: true,
     infinite: true,
@@ -11363,39 +10410,17 @@ function Home() {
     autoplaySpeed: 3000,
     autoplay: true
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_template_Layout__WEBPACK_IMPORTED_MODULE_2__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_home_hero_section__WEBPACK_IMPORTED_MODULE_1__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_home_MiddleContent__WEBPACK_IMPORTED_MODULE_3__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_home_Qoute__WEBPACK_IMPORTED_MODULE_4__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_home_CustomerStories__WEBPACK_IMPORTED_MODULE_5__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_slick__WEBPACK_IMPORTED_MODULE_10__.default, {
+  const SliderQuery = _public_page_data_sq_d_1656902362_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = SliderQuery === null || SliderQuery === void 0 ? void 0 : (_SliderQuery$allMarkd = SliderQuery.allMarkdownRemark) === null || _SliderQuery$allMarkd === void 0 ? void 0 : (_SliderQuery$allMarkd2 = _SliderQuery$allMarkd.edges[0]) === null || _SliderQuery$allMarkd2 === void 0 ? void 0 : _SliderQuery$allMarkd2.node;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_template_Layout__WEBPACK_IMPORTED_MODULE_3__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_home_hero_section__WEBPACK_IMPORTED_MODULE_2__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_home_MiddleContent__WEBPACK_IMPORTED_MODULE_4__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_home_Qoute__WEBPACK_IMPORTED_MODULE_5__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_home_CustomerStories__WEBPACK_IMPORTED_MODULE_6__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_slick__WEBPACK_IMPORTED_MODULE_11__.default, {
     className: "mt-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_home_SliderPost__WEBPACK_IMPORTED_MODULE_6__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_home_SliderPost__WEBPACK_IMPORTED_MODULE_6__.default, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_home_SliderIcons__WEBPACK_IMPORTED_MODULE_7__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_home_VC_Cards__WEBPACK_IMPORTED_MODULE_8__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_home_GetStarted__WEBPACK_IMPORTED_MODULE_9__.default, null));
+  }, data === null || data === void 0 ? void 0 : (_data$frontmatter = data.frontmatter) === null || _data$frontmatter === void 0 ? void 0 : _data$frontmatter.SliderContent.map((items, index) => {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_home_SliderPost__WEBPACK_IMPORTED_MODULE_7__.default, {
+      key: index,
+      items: items
+    });
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_home_SliderIcons__WEBPACK_IMPORTED_MODULE_8__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_home_VC_Cards__WEBPACK_IMPORTED_MODULE_9__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_home_GetStarted__WEBPACK_IMPORTED_MODULE_10__.default, null));
 }
-
-/***/ }),
-
-/***/ "./src/pages/news.js":
-/*!***************************!*\
-  !*** ./src/pages/news.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_news_Feature__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/news/Feature */ "./src/components/news/Feature.jsx");
-/* harmony import */ var _components_news_InTheNews__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/news/InTheNews */ "./src/components/news/InTheNews.jsx");
-/* harmony import */ var _components_news_NewsCards__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/news/NewsCards */ "./src/components/news/NewsCards.jsx");
-
-
-
-
-
-const News = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_news_NewsCards__WEBPACK_IMPORTED_MODULE_3__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_news_Feature__WEBPACK_IMPORTED_MODULE_1__.Feature, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_news_InTheNews__WEBPACK_IMPORTED_MODULE_2__.default, null));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (News);
 
 /***/ }),
 
@@ -22134,46 +21159,6 @@ function mitt(all                 ) {
 
 /***/ }),
 
-/***/ "./src/styles/about/header.css":
-/*!*************************************!*\
-  !*** ./src/styles/about/header.css ***!
-  \*************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./src/styles/about/team.css":
-/*!***********************************!*\
-  !*** ./src/styles/about/team.css ***!
-  \***********************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./src/styles/about/why.css":
-/*!**********************************!*\
-  !*** ./src/styles/about/why.css ***!
-  \**********************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./src/styles/blog-list/blogCard.css":
-/*!*******************************************!*\
-  !*** ./src/styles/blog-list/blogCard.css ***!
-  \*******************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
 /***/ "./src/styles/home/Qoute.css":
 /*!***********************************!*\
   !*** ./src/styles/home/Qoute.css ***!
@@ -22278,26 +21263,6 @@ function mitt(all                 ) {
 /*!********************************!*\
   !*** ./src/styles/nav/nav.css ***!
   \********************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./src/styles/news/inTheNews.css":
-/*!***************************************!*\
-  !*** ./src/styles/news/inTheNews.css ***!
-  \***************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./src/styles/news/newsCards.css":
-/*!***************************************!*\
-  !*** ./src/styles/news/newsCards.css ***!
-  \***************************************/
 /***/ (() => {
 
 
@@ -55128,36 +54093,6 @@ function warning(condition, message) {
 
 /***/ }),
 
-/***/ "./src/components/about/my.jpeg":
-/*!**************************************!*\
-  !*** ./src/components/about/my.jpeg ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "static/my-ed7318baa0c80f032c860f6dce26519c.jpeg");
-
-/***/ }),
-
-/***/ "./src/components/about/whycover.jpg":
-/*!*******************************************!*\
-  !*** ./src/components/about/whycover.jpg ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "static/whycover-8bb19c3242d12725390ccd93cff922e5.jpg");
-
-/***/ }),
-
 /***/ "./src/video/heroVideo.mp4":
 /*!*********************************!*\
   !*** ./src/video/heroVideo.mp4 ***!
@@ -55170,6 +54105,94 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "static/heroVideo-f09d25d58258ccbd1c95206330d423f7.mp4");
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/1147747176.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/1147747176.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"391371c0-8773-5324-8a50-4f7d431f4c07","frontmatter":{"SliderContent":[{"title":"“\\"One of Credo’s store managers had an $800 sale on her first try\\"”","slogan":"Dawn Dobras, CEO - Credo Beauty","image":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/imgCarouselCredoAltCrop@2x-933x1024.jpg","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerCredo.svg","color":"#fa3d3d","backgroundColor":"#fcb09c"},{"title":"“We went on to exceed our initial business case and deliver six-figure sales in the first 12 weeks”","slogan":"Aaron Detrick, VP Digital - rag & bone","image":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/imgCarousel.png","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icQuoteRetailerRagAndBone-1.svg","color":"#c29ce5","backgroundColor":"#035973"},{"title":"“Helps us bridge the gap between our physical and online showrooms”","slogan":"Anne Catapano, Head of ecommerce - Jonathan Adler","image":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/imgCarouselJonathanAdlerS@2x-643x1024.jpg","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerJonathanAdler.svg","color":"#fcb09c","backgroundColor":"#144f45"}],"heading":"One of credos\'s store managers had an $800 sale on her first try","subHeading":"Dawn Dobras, CEO - Credo Beauty","SliderIcons":[{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Nike-1.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Levis-1.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Sephora-1.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48HermanMiller-1.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Annoushka.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48JonathanAdler.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Three.svg"}]}}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/1435072483.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/1435072483.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"heading":"WITH YOU. EVERY STEP OF THE WAY.","CardData":[{"title":"EASY TO GET STARTED","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationCardEasyToGetStarted.svg","description":"Get started with low-touch installation, fast onboarding and dedicated training."},{"title":"DEDICATED SUPPORT","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationCardDedicatedSupport.svg","description":"Our customer success team will ensure a smooth launch and help you maximize performance."},{"title":"GLOBAL SCALE","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationCardGlobalScale.svg","description":"Hero is used globally by brands in more than 31 markets across 14 languages."}],"path":"/home/vc-cards"}}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/1656902362.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/1656902362.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"391371c0-8773-5324-8a50-4f7d431f4c07","frontmatter":{"SliderContent":[{"title":"“\\"One of Credo’s store managers had an $800 sale on her first try\\"”","slogan":"Dawn Dobras, CEO - Credo Beauty","image":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/imgCarouselCredoAltCrop@2x-933x1024.jpg","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerCredo.svg","color":"#fa3d3d","backgroundColor":"#fcb09c"},{"title":"“We went on to exceed our initial business case and deliver six-figure sales in the first 12 weeks”","slogan":"Aaron Detrick, VP Digital - rag & bone","image":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/imgCarousel.png","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icQuoteRetailerRagAndBone-1.svg","color":"#c29ce5","backgroundColor":"#035973"},{"title":"“Helps us bridge the gap between our physical and online showrooms”","slogan":"Anne Catapano, Head of ecommerce - Jonathan Adler","image":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/imgCarouselJonathanAdlerS@2x-643x1024.jpg","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerJonathanAdler.svg","color":"#fcb09c","backgroundColor":"#144f45"}],"heading":"One of credos\'s store managers had an $800 sale on her first try","subHeading":"Dawn Dobras, CEO - Credo Beauty"}}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/203516583.json":
+/*!**********************************************!*\
+  !*** ./public/page-data/sq/d/203516583.json ***!
+  \**********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"7f7b7740-b4e5-53e9-bf39-7b3d20d91fa3","frontmatter":{"title":"THE REAL WAY","title2":"TO SHOP VIRTUALLY.","slogan":"Add the IRL experience to your online store with the #1 virtual shopping platform.","path":"/home/hero-section","images":[{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Nike-1.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Levis-1.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Sephora-1.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48HermanMiller-1.svg"}],"video":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/04/vidHeroMainLoopPortrait@2x.mp4"}}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/2838905889.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/2838905889.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"f715eeb4-d8fc-5d5c-80e8-f46700953e37","frontmatter":{"title":"BE THERE. VIRTUALLY.","desc2":"Now they can shop with you the same way.","desc":"Your customers love to watch, chat and video call.","MidContent":[{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationHomeInspireVisitors.svg","slogan":"Inspire visitors","title":"ONE-TO-MANY VIDEO","title2":"SHOPPING","left":true,"video":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/vidShoppableStories.mp4","description":"Bring products to life by adding the power of authentic, one-to-many video shopping to your online store.","image":null},{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationHomeConvertShoppers.svg","slogan":"Convert shoppers","title":"ONE-TO-ONE","title2":"VIRTUAL SHOPPING","left":false,"video":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/vidLiveChatVideoCall@2x.mp4","description":"Assist shoppers with live 1-on-1 product advice the way they prefer: over chat and video calling.","image":null},{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationHomeVirtualClienteling.svg","slogan":"Retain customers","title":"VIRTUAL","title2":"CLIENTELING","left":true,"video":"","description":"Keep customers coming back long after they leave your store. Stay in touch via text, email and WhatsApp.","image":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/imgRetainStatic@2x.png"}]}}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/3433709924.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/3433709924.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"Take your shopping experience to the next level.","subTitle":"Available for all eCommerce platforms.","para1":"Running on Shopify?","para2":"Learn more.","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icShopify.svg","heading":"GET STARTED","image":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationWatchADemo.svg"}}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/3788451428.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/3788451428.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"348b24fb-4d02-5dbc-9127-a3d7ed38f560","frontmatter":{"title":"CHAT + VIDEO SHOPPING","subTitle":"THE FUTURE OF RETAIL","FeatureData":[{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationFutureMakeEcommerceHuman.svg","title":"The Human Touch","description":"Bring the personal touch of in-store shopping to your online store."},{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationFutureCompetitiveEdge.svg","title":"Your Competitive Edge","description":"Set your online experience apart – empower your store staff, experts or influencers to assist online shoppers."},{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationFutureSuperchargeSales.svg","title":"Supercharge Your Sales","description":"With Hero, one in four customers will go on to buy and spend up to 70% more."}]}}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/491656419.json":
+/*!**********************************************!*\
+  !*** ./public/page-data/sq/d/491656419.json ***!
+  \**********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"fc95d331-abe4-5db4-9c3a-d495e1d9b3d1","frontmatter":{"title":"Shoppers love HERO®","description":"JULIE MADE THE DREADED EXPERIENCE OF ONLINE SHOPPING SO COMFORTING AS IF I WERE THERE!"}}}]}}}');
 
 /***/ }),
 

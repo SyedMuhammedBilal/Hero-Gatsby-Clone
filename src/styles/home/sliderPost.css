@@ -14,8 +14,8 @@
     /* background-color: black; */
     display: flex;
     flex-wrap: wrap;
-    background-color: #fcb09c!important;
-    color: #fa3d3d!important;
+    /* background-color: #fcb09c;
+    color: #fa3d3d; */
     width: 1003px;
     overflow-y: hidden;
     border-radius: 5px;

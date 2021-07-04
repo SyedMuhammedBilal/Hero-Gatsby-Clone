@@ -4,17 +4,47 @@ import ItalicHeading from '../../Reusable-Components/ItalicHeading';
 import '../../styles/home/middleContent.css'
 import Arrow from '../../svgs/arrow';
 import {MidContent} from './dummy-data/midContent';
+import { useStaticQuery, graphql } from "gatsby"
 
 const MiddleContent = () => {
     const [midContent, setMidContent] = useState(MidContent);
 
+    const MidContentQuery = useStaticQuery(graphql`
+    {
+      allMarkdownRemark(filter: {frontmatter: {path: {eq: "/home/mid-content"}}}) {
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+              desc2
+              desc
+              MidContent {
+                icon
+                slogan
+                title
+                title2
+                left
+                video
+                description
+                image
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const data = MidContentQuery?.allMarkdownRemark?.edges[0]?.node
+
     return (
         <div className="middle-comtent">
-            <ItalicHeading heading="BE THERE. VIRTUALLY." desc1="Your customers love to watch, chat and video call." desc2="Now they can shop with you the same way." />
-          {midContent.map((items, index) => {
+            <ItalicHeading heading={data.frontmatter.title} desc1={data.frontmatter.desc} desc2={data.frontmatter.desc2} />
+          {data?.frontmatter?.MidContent.map((items, index) => {
             return (
               (items.left) ?
-                  <section className="text-gray-600 body-font">
+                  <section key={index} className="text-gray-600 body-font">
                   <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-60 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                         <img 
@@ -29,10 +59,10 @@ const MiddleContent = () => {
                         <br className="hidden lg:inline-block" />
                           {items.title2}
                       </h1>
-                      <p style={{textAlign: 'left'}} className="mb-8 leading-relaxed">
+                      <p style={{textAlign: 'left'}} className="mb-20 leading-relaxed">
                         {items.description}
                       </p>
-                      <div className="middle-content__button">
+                      <div style={{marginTop: '2rem'}} className="middle-content__button">
                         <button className="middle-content-btn">explore this feature <Arrow/> </button>
                       </div>
                     </div>
@@ -73,7 +103,7 @@ const MiddleContent = () => {
                     <p style={{textAlign: 'left'}} className="mb-8 leading-relaxed">
                       {items.description}
                     </p>
-                    <div className="middle-content__button">
+                    <div style={{marginTop: '2rem'}} className="middle-content__button">
                       <button className="middle-content-btn">explore this feature <Arrow/> </button>
                     </div>
                   </div>
