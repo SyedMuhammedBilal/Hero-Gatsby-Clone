@@ -4,10 +4,27 @@ import { Link } from "gatsby"
 import CancelIcon from '@material-ui/icons/Cancel';
 import Aos from "aos"
 import "aos/dist/aos.css"
-
-
+import { useStaticQuery, graphql } from "gatsby"
 
 let Hamburger = ({ clickFunc }) => {
+    const Hamburger_Query = useStaticQuery(graphql`
+    {
+      allMarkdownRemark(filter: {frontmatter: {path: {eq: "/navbar"}}}) {
+        edges {
+          node {
+            frontmatter {
+              icon
+              button
+              link
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const data = Hamburger_Query?.allMarkdownRemark?.edges[0].node?.frontmatter
+
     useEffect(() => {
         Aos.init({ duration: 1000 })
     }, [])
@@ -18,7 +35,7 @@ let Hamburger = ({ clickFunc }) => {
             <div className="hamMenu">
                 <div className="logoDiv" >
                     <div data-aos="fade-left" data-aos-duration="3000">
-                        <img className="hamburgerLogo" src="https://img.pngio.com/image-library-horizon-therapeutics-horizon-logo-png-3911_1676.jpg" alt="hero" />
+                        <img className="hamburgerLogo" src={data?.icon} alt="hero" />
                         {/* <Link  className="hamLogo" to='/' >Logo </Link> */}
                     </div>
                     <CancelIcon data-aos="fade-left" data-aos-duration="3000" onClick={clickFunc} style={{ fill: "white" }} />
@@ -32,7 +49,7 @@ let Hamburger = ({ clickFunc }) => {
 
             </div>
 
-            <button data-aos="fade-left" className="hamBut" data-aos-duration="3000" >GET STARTED</button>
+            <a style={{textDecoration: 'none'}} href={data?.link}> <button data-aos="fade-left" className="hamBut" data-aos-duration="3000" > {data?.button} </button></a>
         </div>
 
 

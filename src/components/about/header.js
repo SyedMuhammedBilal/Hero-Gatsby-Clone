@@ -1,21 +1,36 @@
 import React from 'react';
 import '../../styles/about/header.css';
+import { useStaticQuery, graphql } from "gatsby"
 
 function Header() {
+	const aboutHeaderQuery = useStaticQuery(graphql`
+    {
+      allMarkdownRemark(filter: {frontmatter: {path: {eq: "/about/hero-section"}}}) {
+        edges {
+          node {
+            frontmatter {
+              title
+			  image
+            }
+          }
+        }
+      }
+    }
+  `)
+  const data = aboutHeaderQuery?.allMarkdownRemark?.edges[0]?.node?.frontmatter
 	return (
 		<div className="header">
 			<img
 				className="img"
-				src="https://static.tildacdn.com/tild3731-3038-4362-b362-353130656366/image_116.png"
-			></img>
+				src={data?.image}
+			/>
 			<div className="headerPara">
 				<h1>
-					Berlin based, Razor buys Amazon FBA merchants that impress with their high product quality and
-					strong customer ratings.
+					{data?.title}
 				</h1>
 			</div>
 		</div>
 	);
 }
 
-export default Header;
+export default Header

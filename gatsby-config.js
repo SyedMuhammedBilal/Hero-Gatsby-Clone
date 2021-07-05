@@ -43,6 +43,13 @@ module.exports = {
         name: 'footer'
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/navbar`,
+        name: 'navbar'
+      }
+    },
     `gatsby-transformer-remark`,
     'gatsby-plugin-postcss'
   ],
