@@ -2,6 +2,7 @@
 import React from 'react';
 import '../../styles/about/header.css';
 import { useStaticQuery, graphql } from 'gatsby';
+// hello
 
 function Ourinvestor() {
 	const Investors_Query = useStaticQuery(graphql`
