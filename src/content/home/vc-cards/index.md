@@ -1,6 +1,8 @@
 ---
 heading: "WITH YOU. EVERY STEP OF THE WAY."
 path: "/home/vc-cards"
+button: "meet our team"
+link: ""
 CardData: [
     {
         icon: 'https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationCardEasyToGetStarted.svg',

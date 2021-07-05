@@ -1,24 +1,46 @@
-import React from 'react'
-import Button from '../../Reusable-Components/Button'
-import Heading from '../../Reusable-Components/Heading'
-import Arrow from '../../svgs/arrow'
+import React from 'react';
+import Button from '../../Reusable-Components/Button';
+import Heading from '../../Reusable-Components/Heading';
+import Arrow from '../../svgs/arrow';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import '../../styles/home/customerStories.css'
+import '../../styles/home/customerStories.css';
 
 const CustomerStories = () => {
-    return (
-        <>
-            <div>
-                <Heading heading="LEVEL-UP YOUR ECOMMERCE EXPERIENCE." desc1="Discover how stores are thriving with HERO®" />
-            </div>
-            <div className="customer__stories-button">
-                <button className="customer__stories-btn mt-10">
-                    read customer stores
-                    <Arrow />
-                </button> 
-            </div>
-        </>
-    )
-}
+	const Customer_Stories = useStaticQuery(graphql`
+		{
+			allMarkdownRemark(filter: { frontmatter: { path: { eq: "/home/customer-stories" } } }) {
+				edges {
+					node {
+						frontmatter {
+							title
+							slogan
+							button
+							link
+						}
+					}
+				}
+			}
+		}
+	`);
 
-export default CustomerStories
+	const data = Customer_Stories?.allMarkdownRemark?.edges[0].node.frontmatter;
+
+	return (
+		<>
+			<div>
+				<Heading heading={data?.title} desc1={data?.slogan} />
+			</div>
+			<div className="customer__stories-button">
+				<a style={{textDecoration: 'none'}} href={data?.link}>
+					<button style={{ textDecoration: 'none' }} className="customer__stories-btn mt-10">
+						{data?.button}
+						<Arrow />
+					</button>
+				</a>
+			</div>
+		</>
+	);
+};
+
+export default CustomerStories;

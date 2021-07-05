@@ -9465,25 +9465,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Reusable-Components/Button */ "./src/Reusable-Components/Button.js");
-/* harmony import */ var _styles_home_blockWrapper_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/home/blockWrapper.css */ "./src/styles/home/blockWrapper.css");
-/* harmony import */ var _styles_home_blockWrapper_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_home_blockWrapper_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _public_page_data_sq_d_2384869184_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/2384869184.json */ "./public/page-data/sq/d/2384869184.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Reusable-Components/Button */ "./src/Reusable-Components/Button.js");
+/* harmony import */ var _styles_home_blockWrapper_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/home/blockWrapper.css */ "./src/styles/home/blockWrapper.css");
+/* harmony import */ var _styles_home_blockWrapper_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_home_blockWrapper_css__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
 
 const BlockWrapper = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  var _Block_Query$allMarkd, _Block_Query$allMarkd2, _data$frontmatter, _data$frontmatter2, _data$frontmatter3;
+
+  const Block_Query = _public_page_data_sq_d_2384869184_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = Block_Query === null || Block_Query === void 0 ? void 0 : (_Block_Query$allMarkd = Block_Query.allMarkdownRemark) === null || _Block_Query$allMarkd === void 0 ? void 0 : (_Block_Query$allMarkd2 = _Block_Query$allMarkd.edges[0]) === null || _Block_Query$allMarkd2 === void 0 ? void 0 : _Block_Query$allMarkd2.node;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "block__wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "block__wrapper-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "block__wrapper-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "eCommerce Comes Alive With Stories by HERO\xAE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, " ", data === null || data === void 0 ? void 0 : (_data$frontmatter = data.frontmatter) === null || _data$frontmatter === void 0 ? void 0 : _data$frontmatter.title, " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "block__wrapper-button"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", null, "Learn more"))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    style: {
+      textDecoration: 'none'
+    },
+    href: data === null || data === void 0 ? void 0 : (_data$frontmatter2 = data.frontmatter) === null || _data$frontmatter2 === void 0 ? void 0 : _data$frontmatter2.link
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("button", null, data === null || data === void 0 ? void 0 : (_data$frontmatter3 = data.frontmatter) === null || _data$frontmatter3 === void 0 ? void 0 : _data$frontmatter3.button)))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlockWrapper);
@@ -9501,13 +9512,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Reusable-Components/Button */ "./src/Reusable-Components/Button.js");
-/* harmony import */ var _Reusable_Components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Reusable-Components/Heading */ "./src/Reusable-Components/Heading.jsx");
-/* harmony import */ var _svgs_arrow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../svgs/arrow */ "./src/svgs/arrow.js");
-/* harmony import */ var _styles_home_customerStories_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/home/customerStories.css */ "./src/styles/home/customerStories.css");
-/* harmony import */ var _styles_home_customerStories_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_home_customerStories_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _public_page_data_sq_d_3035821425_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/3035821425.json */ "./public/page-data/sq/d/3035821425.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Reusable-Components/Button */ "./src/Reusable-Components/Button.js");
+/* harmony import */ var _Reusable_Components_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Reusable-Components/Heading */ "./src/Reusable-Components/Heading.jsx");
+/* harmony import */ var _svgs_arrow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../svgs/arrow */ "./src/svgs/arrow.js");
+/* harmony import */ var _styles_home_customerStories_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/home/customerStories.css */ "./src/styles/home/customerStories.css");
+/* harmony import */ var _styles_home_customerStories_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_home_customerStories_css__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
@@ -9515,14 +9528,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const CustomerStories = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Reusable_Components_Heading__WEBPACK_IMPORTED_MODULE_2__.default, {
-    heading: "LEVEL-UP YOUR ECOMMERCE EXPERIENCE.",
-    desc1: "Discover how stores are thriving with HERO\xAE"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  var _Customer_Stories$all;
+
+  const Customer_Stories = _public_page_data_sq_d_3035821425_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = Customer_Stories === null || Customer_Stories === void 0 ? void 0 : (_Customer_Stories$all = Customer_Stories.allMarkdownRemark) === null || _Customer_Stories$all === void 0 ? void 0 : _Customer_Stories$all.edges[0].node.frontmatter;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Reusable_Components_Heading__WEBPACK_IMPORTED_MODULE_3__.default, {
+    heading: data === null || data === void 0 ? void 0 : data.title,
+    desc1: data === null || data === void 0 ? void 0 : data.slogan
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "customer__stories-button"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    style: {
+      textDecoration: 'none'
+    },
+    href: data === null || data === void 0 ? void 0 : data.link
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("button", {
+    style: {
+      textDecoration: 'none'
+    },
     className: "customer__stories-btn mt-10"
-  }, "read customer stores", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_3__.default, null))));
+  }, data === null || data === void 0 ? void 0 : data.button, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_4__.default, null)))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CustomerStories);
@@ -9615,7 +9640,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_3433709924_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/3433709924.json */ "./public/page-data/sq/d/3433709924.json");
+/* harmony import */ var _public_page_data_sq_d_187870607_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/187870607.json */ "./public/page-data/sq/d/187870607.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_home_getStarted_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/home/getStarted.css */ "./src/styles/home/getStarted.css");
@@ -9627,7 +9652,7 @@ __webpack_require__.r(__webpack_exports__);
 const GetStarted = () => {
   var _GetStartedQuery$allM, _GetStartedQuery$allM2;
 
-  const GetStartedQuery = _public_page_data_sq_d_3433709924_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const GetStartedQuery = _public_page_data_sq_d_187870607_json__WEBPACK_IMPORTED_MODULE_0__.data;
   const data = GetStartedQuery === null || GetStartedQuery === void 0 ? void 0 : (_GetStartedQuery$allM = GetStartedQuery.allMarkdownRemark) === null || _GetStartedQuery$allM === void 0 ? void 0 : (_GetStartedQuery$allM2 = _GetStartedQuery$allM.edges[0]) === null || _GetStartedQuery$allM2 === void 0 ? void 0 : _GetStartedQuery$allM2.node.frontmatter;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("section", {
     style: {
@@ -9653,9 +9678,14 @@ const GetStarted = () => {
     className: "getStarted__title"
   }, data === null || data === void 0 ? void 0 : data.subTitle), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "getStarted-button"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    style: {
+      textDecoration: 'none'
+    },
+    href: data === null || data === void 0 ? void 0 : data.link
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("button", {
     className: "getStarted-btn mt-10"
-  }, "GET STARTED")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+  }, data === null || data === void 0 ? void 0 : data.heading))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "getStarted__end-slogan mt-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "getStarted__smallIcon"
@@ -9663,7 +9693,12 @@ const GetStarted = () => {
     src: data === null || data === void 0 ? void 0 : data.icon
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "getStarted-paragraph"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, data === null || data === void 0 ? void 0 : data.para1), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", null, data === null || data === void 0 ? void 0 : data.para2))))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, data === null || data === void 0 ? void 0 : data.para1), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    style: {
+      textDecoration: 'none'
+    },
+    href: data === null || data === void 0 ? void 0 : data.para2Link
+  }, data === null || data === void 0 ? void 0 : data.para2))))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (GetStarted);
@@ -9681,7 +9716,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_2838905889_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/2838905889.json */ "./public/page-data/sq/d/2838905889.json");
+/* harmony import */ var _public_page_data_sq_d_339851678_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/339851678.json */ "./public/page-data/sq/d/339851678.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Reusable-Components/Button */ "./src/Reusable-Components/Button.js");
@@ -9705,7 +9740,7 @@ const MiddleContent = () => {
     0: midContent,
     1: setMidContent
   } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(_dummy_data_midContent__WEBPACK_IMPORTED_MODULE_6__.MidContent);
-  const MidContentQuery = _public_page_data_sq_d_2838905889_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const MidContentQuery = _public_page_data_sq_d_339851678_json__WEBPACK_IMPORTED_MODULE_0__.data;
   const data = MidContentQuery === null || MidContentQuery === void 0 ? void 0 : (_MidContentQuery$allM = MidContentQuery.allMarkdownRemark) === null || _MidContentQuery$allM === void 0 ? void 0 : (_MidContentQuery$allM2 = _MidContentQuery$allM.edges[0]) === null || _MidContentQuery$allM2 === void 0 ? void 0 : _MidContentQuery$allM2.node;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "middle-comtent"
@@ -9748,9 +9783,14 @@ const MiddleContent = () => {
         marginTop: '2rem'
       },
       className: "middle-content__button"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+      style: {
+        textDecoration: 'none'
+      },
+      href: items.link
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("button", {
       className: "middle-content-btn"
-    }, "explore this feature ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_5__.default, null), " "))), items.image ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+    }, "explore this feature ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_5__.default, null), " ")))), items.image ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
       class: "lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
       class: "object-cover object-center rounded",
@@ -9822,9 +9862,14 @@ const MiddleContent = () => {
         marginTop: '2rem'
       },
       className: "middle-content__button"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+      style: {
+        textDecoration: 'none'
+      },
+      href: items.link
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("button", {
       className: "middle-content-btn"
-    }, "explore this feature ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_5__.default, null), " ")))));
+    }, "explore this feature ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_5__.default, null), " "))))));
   }));
 };
 
@@ -9991,7 +10036,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_1435072483_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/1435072483.json */ "./public/page-data/sq/d/1435072483.json");
+/* harmony import */ var _public_page_data_sq_d_1269876203_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/1269876203.json */ "./public/page-data/sq/d/1269876203.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Reusable_Components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Reusable-Components/Heading */ "./src/Reusable-Components/Heading.jsx");
@@ -10010,9 +10055,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Cards = () => {
-  var _VC_Cards_Query$allMa, _VC_Cards_Query$allMa2, _VC_Cards_Query$allMa3, _VC_Cards_Query$allMa4, _data$frontmatter;
+  var _VC_Cards_Query$allMa, _VC_Cards_Query$allMa2, _VC_Cards_Query$allMa3, _VC_Cards_Query$allMa4, _data$frontmatter, _data$frontmatter2, _data$frontmatter3;
 
-  const VC_Cards_Query = _public_page_data_sq_d_1435072483_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const VC_Cards_Query = _public_page_data_sq_d_1269876203_json__WEBPACK_IMPORTED_MODULE_0__.data;
   const data = VC_Cards_Query === null || VC_Cards_Query === void 0 ? void 0 : (_VC_Cards_Query$allMa = VC_Cards_Query.allMarkdownRemark) === null || _VC_Cards_Query$allMa === void 0 ? void 0 : (_VC_Cards_Query$allMa2 = _VC_Cards_Query$allMa.edges[0]) === null || _VC_Cards_Query$allMa2 === void 0 ? void 0 : _VC_Cards_Query$allMa2.node;
   const VcCards = VC_Cards_Query === null || VC_Cards_Query === void 0 ? void 0 : (_VC_Cards_Query$allMa3 = VC_Cards_Query.allMarkdownRemark) === null || _VC_Cards_Query$allMa3 === void 0 ? void 0 : (_VC_Cards_Query$allMa4 = _VC_Cards_Query$allMa3.edges[0]) === null || _VC_Cards_Query$allMa4 === void 0 ? void 0 : _VC_Cards_Query$allMa4.node.frontmatter.CardData;
   const {
@@ -10042,9 +10087,14 @@ const Cards = () => {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, items.description)));
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "vc__cards-button"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    style: {
+      textDecoration: 'none'
+    },
+    href: data === null || data === void 0 ? void 0 : (_data$frontmatter2 = data.frontmatter) === null || _data$frontmatter2 === void 0 ? void 0 : _data$frontmatter2.link
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("button", {
     className: "vc__cards-btn mt-10"
-  }, "MEET OUR TEAM", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_6__.default, null))));
+  }, data === null || data === void 0 ? void 0 : (_data$frontmatter3 = data.frontmatter) === null || _data$frontmatter3 === void 0 ? void 0 : _data$frontmatter3.button, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_6__.default, null)))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Cards);
@@ -10152,7 +10202,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_203516583_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/203516583.json */ "./public/page-data/sq/d/203516583.json");
+/* harmony import */ var _public_page_data_sq_d_4174380612_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/4174380612.json */ "./public/page-data/sq/d/4174380612.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Reusable-Components/Button */ "./src/Reusable-Components/Button.js");
@@ -10172,9 +10222,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Hero = () => {
-  var _HeroSectionQuery$all, _HeroSectionQuery$all2, _HeroSectionQuery$all3, _HeroSectionQuery$all4, _HeroSectionQuery$all5, _HeroSectionQuery$all6, _data$frontmatter, _data$frontmatter2, _data$frontmatter3;
+  var _HeroSectionQuery$all, _HeroSectionQuery$all2, _HeroSectionQuery$all3, _HeroSectionQuery$all4, _HeroSectionQuery$all5, _HeroSectionQuery$all6, _data$frontmatter, _data$frontmatter2, _data$frontmatter3, _data$frontmatter4, _data$frontmatter5;
 
-  const HeroSectionQuery = _public_page_data_sq_d_203516583_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const HeroSectionQuery = _public_page_data_sq_d_4174380612_json__WEBPACK_IMPORTED_MODULE_0__.data;
   const imageQueryState = HeroSectionQuery === null || HeroSectionQuery === void 0 ? void 0 : (_HeroSectionQuery$all = HeroSectionQuery.allMarkdownRemark) === null || _HeroSectionQuery$all === void 0 ? void 0 : (_HeroSectionQuery$all2 = _HeroSectionQuery$all.edges[0]) === null || _HeroSectionQuery$all2 === void 0 ? void 0 : (_HeroSectionQuery$all3 = _HeroSectionQuery$all2.node) === null || _HeroSectionQuery$all3 === void 0 ? void 0 : (_HeroSectionQuery$all4 = _HeroSectionQuery$all3.frontmatter) === null || _HeroSectionQuery$all4 === void 0 ? void 0 : _HeroSectionQuery$all4.images;
   const {
     0: iconState,
@@ -10192,10 +10242,20 @@ const Hero = () => {
     className: "hero__buttons"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_2__.default, {
     title: "GET STARTED"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_2__.default, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    style: {
+      textDecoration: 'none'
+    },
+    href: data === null || data === void 0 ? void 0 : (_data$frontmatter3 = data.frontmatter) === null || _data$frontmatter3 === void 0 ? void 0 : _data$frontmatter3.get_started_link
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_2__.default, {
     title: "watch demo",
     background: true
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    style: {
+      textDecoration: 'none'
+    },
+    href: data === null || data === void 0 ? void 0 : (_data$frontmatter4 = data.frontmatter) === null || _data$frontmatter4 === void 0 ? void 0 : _data$frontmatter4.watch_demo_link
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "hero__imgs"
   }, iconState.map((items, index) => {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
@@ -10205,7 +10265,7 @@ const Hero = () => {
       src: items.img,
       alt: "images"
     }));
-  }))), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "hero__video"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("video", {
     preload: "auto",
@@ -10215,7 +10275,7 @@ const Hero = () => {
     muted: true,
     poster: "https://www.usehero.com/wp-content/uploads/2021/04/imgHeroMainPortrait@2x.jpg"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("source", {
-    src: data === null || data === void 0 ? void 0 : (_data$frontmatter3 = data.frontmatter) === null || _data$frontmatter3 === void 0 ? void 0 : _data$frontmatter3.video,
+    src: data === null || data === void 0 ? void 0 : (_data$frontmatter5 = data.frontmatter) === null || _data$frontmatter5 === void 0 ? void 0 : _data$frontmatter5.video,
     type: "video/mp4"
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_BlockWrapper__WEBPACK_IMPORTED_MODULE_6__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Feature__WEBPACK_IMPORTED_MODULE_7__.Feature, null));
 };
@@ -54119,14 +54179,14 @@ module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"id
 
 /***/ }),
 
-/***/ "./public/page-data/sq/d/1435072483.json":
+/***/ "./public/page-data/sq/d/1269876203.json":
 /*!***********************************************!*\
-  !*** ./public/page-data/sq/d/1435072483.json ***!
+  !*** ./public/page-data/sq/d/1269876203.json ***!
   \***********************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"heading":"WITH YOU. EVERY STEP OF THE WAY.","CardData":[{"title":"EASY TO GET STARTED","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationCardEasyToGetStarted.svg","description":"Get started with low-touch installation, fast onboarding and dedicated training."},{"title":"DEDICATED SUPPORT","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationCardDedicatedSupport.svg","description":"Our customer success team will ensure a smooth launch and help you maximize performance."},{"title":"GLOBAL SCALE","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationCardGlobalScale.svg","description":"Hero is used globally by brands in more than 31 markets across 14 languages."}],"path":"/home/vc-cards"}}}]}}}');
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"heading":"WITH YOU. EVERY STEP OF THE WAY.","button":"meet our team","link":"","CardData":[{"title":"EASY TO GET STARTED","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationCardEasyToGetStarted.svg","description":"Get started with low-touch installation, fast onboarding and dedicated training."},{"title":"DEDICATED SUPPORT","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationCardDedicatedSupport.svg","description":"Our customer success team will ensure a smooth launch and help you maximize performance."},{"title":"GLOBAL SCALE","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationCardGlobalScale.svg","description":"Hero is used globally by brands in more than 31 markets across 14 languages."}],"path":"/home/vc-cards"}}}]}}}');
 
 /***/ }),
 
@@ -54141,36 +54201,47 @@ module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"id
 
 /***/ }),
 
-/***/ "./public/page-data/sq/d/203516583.json":
+/***/ "./public/page-data/sq/d/187870607.json":
 /*!**********************************************!*\
-  !*** ./public/page-data/sq/d/203516583.json ***!
+  !*** ./public/page-data/sq/d/187870607.json ***!
   \**********************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"7f7b7740-b4e5-53e9-bf39-7b3d20d91fa3","frontmatter":{"title":"THE REAL WAY","title2":"TO SHOP VIRTUALLY.","slogan":"Add the IRL experience to your online store with the #1 virtual shopping platform.","path":"/home/hero-section","images":[{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Nike-1.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Levis-1.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Sephora-1.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48HermanMiller-1.svg"}],"video":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/04/vidHeroMainLoopPortrait@2x.mp4"}}}]}}}');
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"Take your shopping experience to the next level.","subTitle":"Available for all eCommerce platforms.","para1":"Running on Shopify?","para2":"Learn more.","para2Link":"","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icShopify.svg","heading":"GET STARTED","image":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationWatchADemo.svg","link":""}}}]}}}');
 
 /***/ }),
 
-/***/ "./public/page-data/sq/d/2838905889.json":
+/***/ "./public/page-data/sq/d/2384869184.json":
 /*!***********************************************!*\
-  !*** ./public/page-data/sq/d/2838905889.json ***!
+  !*** ./public/page-data/sq/d/2384869184.json ***!
   \***********************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"f715eeb4-d8fc-5d5c-80e8-f46700953e37","frontmatter":{"title":"BE THERE. VIRTUALLY.","desc2":"Now they can shop with you the same way.","desc":"Your customers love to watch, chat and video call.","MidContent":[{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationHomeInspireVisitors.svg","slogan":"Inspire visitors","title":"ONE-TO-MANY VIDEO","title2":"SHOPPING","left":true,"video":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/vidShoppableStories.mp4","description":"Bring products to life by adding the power of authentic, one-to-many video shopping to your online store.","image":null},{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationHomeConvertShoppers.svg","slogan":"Convert shoppers","title":"ONE-TO-ONE","title2":"VIRTUAL SHOPPING","left":false,"video":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/vidLiveChatVideoCall@2x.mp4","description":"Assist shoppers with live 1-on-1 product advice the way they prefer: over chat and video calling.","image":null},{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationHomeVirtualClienteling.svg","slogan":"Retain customers","title":"VIRTUAL","title2":"CLIENTELING","left":true,"video":"","description":"Keep customers coming back long after they leave your store. Stay in touch via text, email and WhatsApp.","image":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/imgRetainStatic@2x.png"}]}}}]}}}');
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"button":"learn more","title":"eCommerce Comes Alive With Stories by HERO®","link":""}}}]}}}');
 
 /***/ }),
 
-/***/ "./public/page-data/sq/d/3433709924.json":
+/***/ "./public/page-data/sq/d/3035821425.json":
 /*!***********************************************!*\
-  !*** ./public/page-data/sq/d/3433709924.json ***!
+  !*** ./public/page-data/sq/d/3035821425.json ***!
   \***********************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"Take your shopping experience to the next level.","subTitle":"Available for all eCommerce platforms.","para1":"Running on Shopify?","para2":"Learn more.","icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icShopify.svg","heading":"GET STARTED","image":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationWatchADemo.svg"}}}]}}}');
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"LEVEL-UP YOUR ECOMMERCE EXPERIENCE.","slogan":"Discover how stores are thriving with HERO®","button":"read customer stories","link":""}}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/339851678.json":
+/*!**********************************************!*\
+  !*** ./public/page-data/sq/d/339851678.json ***!
+  \**********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"f715eeb4-d8fc-5d5c-80e8-f46700953e37","frontmatter":{"title":"BE THERE. VIRTUALLY.","desc2":"Now they can shop with you the same way.","desc":"Your customers love to watch, chat and video call.","MidContent":[{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationHomeInspireVisitors.svg","slogan":"Inspire visitors","title":"ONE-TO-MANY VIDEO","title2":"SHOPPING","link":"","left":true,"video":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/vidShoppableStories.mp4","description":"Bring products to life by adding the power of authentic, one-to-many video shopping to your online store.","image":null},{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationHomeConvertShoppers.svg","slogan":"Convert shoppers","title":"ONE-TO-ONE","title2":"VIRTUAL SHOPPING","link":"","left":false,"video":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/vidLiveChatVideoCall@2x.mp4","description":"Assist shoppers with live 1-on-1 product advice the way they prefer: over chat and video calling.","image":null},{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationHomeVirtualClienteling.svg","slogan":"Retain customers","title":"VIRTUAL","title2":"CLIENTELING","link":"","left":true,"video":"","description":"Keep customers coming back long after they leave your store. Stay in touch via text, email and WhatsApp.","image":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/imgRetainStatic@2x.png"}]}}}]}}}');
 
 /***/ }),
 
@@ -54182,6 +54253,17 @@ module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"fr
 
 "use strict";
 module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"348b24fb-4d02-5dbc-9127-a3d7ed38f560","frontmatter":{"title":"CHAT + VIDEO SHOPPING","subTitle":"THE FUTURE OF RETAIL","FeatureData":[{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationFutureMakeEcommerceHuman.svg","title":"The Human Touch","description":"Bring the personal touch of in-store shopping to your online store."},{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationFutureCompetitiveEdge.svg","title":"Your Competitive Edge","description":"Set your online experience apart – empower your store staff, experts or influencers to assist online shoppers."},{"icon":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/icIllustrationFutureSuperchargeSales.svg","title":"Supercharge Your Sales","description":"With Hero, one in four customers will go on to buy and spend up to 70% more."}]}}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/4174380612.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/4174380612.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"7f7b7740-b4e5-53e9-bf39-7b3d20d91fa3","frontmatter":{"title":"THE REAL WAY","title2":"TO SHOP VIRTUALLY.","slogan":"Add the IRL experience to your online store with the #1 virtual shopping platform.","path":"/home/hero-section","images":[{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Nike-1.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Levis-1.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48Sephora-1.svg"},{"img":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailer48HermanMiller-1.svg"}],"video":"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/04/vidHeroMainLoopPortrait@2x.mp4","get_started_link":"","watch_demo_link":""}}}]}}}');
 
 /***/ }),
 

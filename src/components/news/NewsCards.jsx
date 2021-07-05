@@ -2,8 +2,32 @@ import React from 'react'
 import '../../styles/news/newsCards.css'
 import '../../styles/blog-list/blogCard.css'
 import Arrow from '../../svgs/arrow'
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 const NewsCards = () => {
+    const Cards_Query = useStaticQuery(graphql`
+    {
+      allMarkdownRemark(
+        filter: {frontmatter: {path: {eq: "/blog-list/card-02"}}}
+        sort: {fields: frontmatter___id}
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+              slug
+              date
+              subTitle
+              image
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const data = Cards_Query?.allMarkdownRemark?.edges
+
     return (
         <div>
             <div className="news__mainHeading mb-52 mt-10">
@@ -14,62 +38,27 @@ const NewsCards = () => {
                     <h1>latest news</h1>
                 </div>
               <ul className="news__cards">
-                <li className="news__cards_item">
-                  <div className="news__card">
-                    <div className="news__card_image">
-                      <img src="https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/tif-axelarigato-300dpi-02_v3-800x450.jpeg" />
-                    </div>
-                    <div className="news__card_content">
-                      <h2 className="news__card_title">newsroom</h2>
-                      <p className="news__card_text">
-                      Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO® 
-                      </p>
-                      <p className="news__btn card_btn">12-10-2021</p>
-                    </div>
-                  </div>
-                </li>
-                <li className="news__cards_item">
-                  <div className="news__card">
-                    <div className="news__card_image">
-                      <img src="https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/HeroxTedBakerxCNN-1-800x533.jpg" />
-                    </div>
-                    <div className="news__card_content">
-                      <h2 className="news__card_title">newsroom</h2>
-                      <p className="news__card_text">
-                      Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO® 
-                      </p>
-                      <p className="news__btn card_btn">12-10-2021</p>
-                    </div>
-                  </div>
-                </li>
-                <li className="news__cards_item">
-                  <div className="news__card">
-                    <div className="news__card_image">
-                      <img src="https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/Blog-Web-1920x1280-Faherty-2_1-1.gif" />
-                    </div>
-                    <div className="news__card_content">
-                      <h2 className="news__card_title">newsroom</h2>
-                      <p className="news__card_text">
-                      Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO® 
-                      </p>
-                      <p className="news__btn card_btn">12-10-2021</p>
-                    </div>
-                  </div>
-                </li>
-                <li className="news__cards_item">
-                  <div className="news__card">
-                    <div className="news__card_image">
-                      <img src="https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/tif-axelarigato-300dpi-02_v3-800x450.jpeg" />
-                    </div>
-                    <div className="news__card_content">
-                      <h2 className="news__card_title">newsroom</h2>
-                      <p className="news__card_text">
-                      Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO® 
-                      </p>
-                      <p className="news__btn card_btn">12-10-2021</p>
-                    </div>
-                  </div>
-                </li>
+                  {data?.map(({ node }, index) => {
+                      return (
+                        <li key={index} style={{cursor: 'pointer'}} className="news__cards_item">
+                        <Link style={{textDecoration: 'none'}} to={"/news/" + node.frontmatter.slug} >
+                            <div className="news__card">
+                              <div className="news__card_image">
+                                <img src={node?.frontmatter?.image} />
+                              </div>
+                              <div className="news__card_content">
+                                <h2 className="news__card_title">{node?.frontmatter?.subTitle}</h2>
+                                <p className="news__card_text">
+                                    {node?.frontmatter?.title}
+                                </p>
+                                <p className="news__btn card_btn"> {node?.frontmatter?.date} </p>
+                              </div>
+                            </div>
+                            </Link>
+                        </li>
+                        
+                      )
+                  })}
               </ul>
               <div className="blogCard-button">
                 <button className="blogCard-btn mt-10">

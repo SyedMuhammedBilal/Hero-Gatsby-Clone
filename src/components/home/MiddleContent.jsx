@@ -24,6 +24,7 @@ const MiddleContent = () => {
                 slogan
                 title
                 title2
+                link
                 left
                 video
                 description
@@ -63,7 +64,9 @@ const MiddleContent = () => {
                         {items.description}
                       </p>
                       <div style={{marginTop: '2rem'}} className="middle-content__button">
+                        <a style={{textDecoration: 'none'}} href={items.link}>
                         <button className="middle-content-btn">explore this feature <Arrow/> </button>
+                        </a>
                       </div>
                     </div>
                     
@@ -104,7 +107,9 @@ const MiddleContent = () => {
                       {items.description}
                     </p>
                     <div style={{marginTop: '2rem'}} className="middle-content__button">
+                      <a style={{textDecoration: 'none'}} href={items.link}>
                       <button className="middle-content-btn">explore this feature <Arrow/> </button>
+                      </a>
                     </div>
                   </div>
                 </div>

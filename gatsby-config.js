@@ -15,6 +15,27 @@ module.exports = {
         name: 'blog-list'
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/news`,
+        name: 'news'
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/about`,
+        name: 'about'
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/blog-post`,
+        name: 'blog-post'
+      }
+    },
     `gatsby-transformer-remark`,
     'gatsby-plugin-postcss'
   ],

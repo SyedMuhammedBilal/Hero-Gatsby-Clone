@@ -2,54 +2,59 @@ import React from 'react'
 import Heading from '../../Reusable-Components/Heading'
 import '../../styles/blog-list/blogCard.css'
 import Arrow from '../../svgs/arrow'
+import { useStaticQuery, graphql, navigate, Link } from "gatsby"
 
 const BlogCard = () => {
-    return (
-        <div>
-            <div style={{textAlign: 'center'}} className="mt-40 mb-20">
-                <h1 className="blogCard__heading">What's new?</h1>
-                <p className="blogCard__para"> Explore our latest news and industry insights.</p>
-            </div>
+    const BlogCardQuery = useStaticQuery(graphql`
+        {
+          allMarkdownRemark(
+            filter: {frontmatter: {path: {eq: "/blog-list/card-02"}}}
+            sort: {fields: frontmatter___id}
+            limit: 2
+          ) {
+            edges { 
+              node {
+                frontmatter {
+                  title
+                  slug
+                  date
+                  subTitle
+                  image
+                }
+              }
+            }
+          }
+        }
+    `)
 
-            <div className="blogCard__main">
+    const data = BlogCardQuery?.allMarkdownRemark?.edges
+
+
+    return (
+
               <ul className="blogCard__cards">
-                <li className="blogCard__cards_item">
-                  <div className="blogCard__card">
-                    <div className="blogCard__card_image">
-                      <img src="https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/tif-axelarigato-300dpi-02_v3-800x450.jpeg" />
-                    </div>
-                    <div className="blogCard__card_content">
-                      <h2 className="blogCard__card_title">newsroom</h2>
-                      <p className="blogCard__card_text">
-                      Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO® 
-                      </p>
-                      <p className="blogCard__btn card_btn">12-10-2021</p>
-                    </div>
-                  </div>
-                </li>
-                <li className="blogCard__cards_item">
-                  <div className="blogCard__card">
-                    <div className="blogCard__card_image">
-                      <img src="https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/Beautylivestreaming-800x450.jpg" />
-                    </div>
-                    <div className="blogCard__card_content">
-                      <h2 className="blogCard__card_title">Card Grid Layout</h2>
-                      <p className="blogCard__card_text">
-                      The Do’s and Don’ts of Beauty Livestream Shopping
-                      </p>
-                      <p className="blogCard__btn card_btn">12-10-2021</p>
-                    </div>
-                  </div>
-                </li>
+                  {data.map(({ node }, index) => {
+                      return (
+                        <li key={index} className="blogCard__cards_item">
+                          <Link style={{textDecoration: 'none', overflowY: 'hidden'}} to={"/news/" + node.frontmatter.slug} >
+                          <div className="blogCard__card">
+                            <div className="blogCard__card_image">
+                              <img src={node.frontmatter.image} />
+                            </div>
+                            <div className="blogCard__card_content">
+                              <h2 className="blogCard__card_title">{node.frontmatter.subTitle}</h2>
+                              <p className="blogCard__card_text">
+                                {node.frontmatter.title}
+                              </p>
+                              <p className="blogCard__btn card_btn">{node.frontmatter.date}</p>
+                            </div>
+                          </div>
+                          </Link>
+                        </li>
+                      )
+                  })}
               </ul>
-              <div className="blogCard-button">
-                <button className="blogCard-btn mt-10">
-                    latest news
-                    <Arrow />
-                </button> 
-            </div>
-            </div>
-        </div>
+
     )
 }
 

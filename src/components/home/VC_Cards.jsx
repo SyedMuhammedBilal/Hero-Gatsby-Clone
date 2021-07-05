@@ -15,6 +15,8 @@ const Cards = () => {
               node {
                 frontmatter {
                   heading
+                  button
+                  link
                   CardData {
                     title
                     icon
@@ -61,10 +63,14 @@ const Cards = () => {
             </div>
         </div>
         <div className="vc__cards-button">
+        <a style={{textDecoration: 'none'}} href={data?.frontmatter?.link}>
                 <button className="vc__cards-btn mt-10">
-                        MEET OUR TEAM
+                  
+                        {data?.frontmatter?.button}
                     <Arrow />
                 </button> 
+                </a>
+                
         </div>
         </div>
     )

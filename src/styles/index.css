@@ -12,6 +12,10 @@
     box-sizing: border-box;
     overflow-x: hidden;
     /* overflow-y: hidden; */
+    font-smooth: inherit;
+font-smooth: initial;
+font-smooth: revert;
+font-smooth: unset;
 }
 
 h1, h2, h3, h4, h5 {
@@ -29,6 +33,7 @@ p {
     margin-bottom: 0 !important;
     overflow-y: hidden;
 }
+
 
 img {
     overflow-y: hidden;

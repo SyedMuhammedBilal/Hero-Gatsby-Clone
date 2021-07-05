@@ -58,7 +58,7 @@ background: transparent;
 @media (min-width: 40rem) {
   .blogCard__cards_item {
     width: 50%;
-    height: 585px;
+    height: 640px;
   }
 }
 
