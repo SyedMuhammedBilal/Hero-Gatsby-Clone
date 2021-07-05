@@ -10,17 +10,23 @@ const Navbar = () => {
     const HamShow = () => {
         setShow(!show)
     }
+    console.log(show)
+    let url = 'https://i.pinimg.com/736x/8c/b0/8a/8cb08a963150553f12dc40795e5cb4a3.jpg'
     return (
         <>
-            <div className="Navbar" >
+
+            <div className={show ? "Navbar" : null} >
                 <div className="logo" >
                     {!show ? null :
-                        <h1>Life And Half</h1>}
+                        <img className="loogo" src='https://img.pngio.com/image-library-horizon-therapeutics-horizon-logo-png-3911_1676.jpg' />
+
+                    }
+
                 </div>
                 <div className="menu" >
                     <ul>
-                        <Link to='/'> Customer Stories </Link>
-                        <Link to='/'> About Us</Link>
+                        <Link to='/blog-list'> Customer Stories </Link>
+                        <Link to='/aboutus'> About Us</Link>
 
                     </ul>
                     <div className="butDiv">

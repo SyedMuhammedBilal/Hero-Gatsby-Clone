@@ -1,9 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import '../../styles/about/header.css'
+import Aos from "aos"
+import "aos/dist/aos.css"
 function Ourvalues() {
+    useEffect(()=>{
+        Aos.init({duration:1000})
+      },[])
+    
     return (
         <section className="text-gray-600 body-font">
-            <div className='titlestyle' style={{ display: "flex", flexDirection: 'column', marginLeft: "4%" }}>
+            <div data-aos="fade-up" className='titlestyle' style={{ display: "flex", flexDirection: 'column', marginLeft: "4%" }}>
                 <h1 style={{ fontSize: "25px", color: "#3b66ea", marginBottom: "3%" }} >OUR VALUES & BELIEFS </h1>
                 <h2 style={{ fontSize: "28px", color: "black", width: "50%" }}>With empathy, qualification and perseverance we are here to take over your Amazon FBA business.</h2>
             </div>

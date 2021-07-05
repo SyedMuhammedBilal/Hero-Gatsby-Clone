@@ -1,10 +1,16 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import '../../styles/about/header.css'
+import Aos from "aos"
+import "aos/dist/aos.css"
 function Ourinvestor() {
+    useEffect(()=>{
+        Aos.init({duration:2000})
+      },[])
+    
     return (
 
         <section className="text-gray-600 body-font" style={{ backgroundColor: "#eeeeee" }}>
-            <div className="investorstitle">
+            <div data-aos='fade-up' className="investorstitle">
                 <h1 className="invh1" >OUR INVESTORS </h1>
                 <h1 className="invh2" >
                     We successfully raised a total of over 450 million dollar in debt and equity.</h1>
@@ -29,8 +35,8 @@ function Ourinvestor() {
                 </div>
             </div>
             <div className="invtend" >
-                <div className="invttitle" >
-                    <div className="comma" > "</div>
+                <div data-aos="fade-right" className="invttitle" >
+                    <div  className="comma" > "</div>
                     <h1> We firmly believe and know from experience that not just the founders, but the entire shareholder group is crucial for a company to succeed</h1>
                     <p>Suleman Ahmed, Co Founder Bilal-Tech</p>
                 </div>

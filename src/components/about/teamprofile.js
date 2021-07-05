@@ -1,11 +1,17 @@
-import React from 'react'
+import React ,{useEffect}from 'react'
 import '../../styles/about/team.css'
 import Img from './my.jpeg'
+import Aos from "aos"
+import "aos/dist/aos.css"
 function Teamprofile() {
+    useEffect(()=>{
+        Aos.init({duration:1000})
+      },[])
+    
     return (
 
         <div className="containers">
-            <div className="teamheading" >
+            <div data-aos="fade-up" className="teamheading" >
                 <h1>
                     Exceptional team with 10+ years of experience in e-commerce, building brands and guiding companies.
                 </h1>

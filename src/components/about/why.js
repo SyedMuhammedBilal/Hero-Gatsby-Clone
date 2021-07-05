@@ -1,9 +1,14 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import '../../styles/about/why.css'
 import Whycover from './whycover.jpg'
+import Aos from "aos"
+import "aos/dist/aos.css"
 function Why() {
+    useEffect(()=>{
+        Aos.init({duration:1000})
+      },[])
     return (
-        <div className="why">
+        <div data-aos="fade-left" className="why">
             <div className="whycont" >
                 <h1 className="whyh1" > WHY LIFE AND HALF
                 </h1>

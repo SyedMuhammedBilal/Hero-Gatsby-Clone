@@ -1,7 +1,12 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import '../../styles/blog-list/blockComponent.css';
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const BlockComponent = () => {
+	useEffect(()=>{
+		Aos.init({duration:2000})
+	  },[])
 	return (
 		<>
             
@@ -14,7 +19,7 @@ const BlockComponent = () => {
 			/>
 
 			<div className="bg-black section-dark pb-11">
-                <div style={{textAlign: 'center'}} className="mt-40 mb-20">
+                <div data-aos='fade-right' style={{textAlign: 'center'}} className="mt-40 mb-20">
                     <h1 className="blockComponent__heading">TRUSTED BY 200+ OF THE</h1>
                     <h1 className="blockComponent__heading">FASTEST-GROWING BRANDS</h1>
 

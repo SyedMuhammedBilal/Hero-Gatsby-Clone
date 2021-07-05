@@ -1,12 +1,17 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Heading from '../../Reusable-Components/Heading'
 import '../../styles/blog-list/blogCard.css'
 import Arrow from '../../svgs/arrow'
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const BlogCard = () => {
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
     return (
         <div>
-            <div style={{textAlign: 'center'}} className="mt-40 mb-20">
+            <div data-aos="fade-left" style={{textAlign: 'center'}} className="mt-40 mb-20">
                 <h1 className="blogCard__heading">What's new?</h1>
                 <p className="blogCard__para"> Explore our latest news and industry insights.</p>
             </div>

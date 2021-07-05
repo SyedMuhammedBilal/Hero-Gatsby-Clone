@@ -46,7 +46,8 @@ const Hero = () => {
                 </div>                    <div className="hero__video">
                     <video preload="auto" playsinline="" loop autoPlay muted poster="https://www.usehero.com/wp-content/uploads/2021/04/imgHeroMainPortrait@2x.jpg">
                         <source src={Video} type="video/mp4" />
-                    </video>
+                    </video> 
+                    
                 </div>
 
             </section>
@@ -54,6 +55,7 @@ const Hero = () => {
             <Feature />
         </React.Fragment>
     )
+
 }
 
 export default Hero;

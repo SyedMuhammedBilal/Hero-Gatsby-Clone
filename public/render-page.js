@@ -14,10 +14,7 @@
 
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js")),
-  "component---src-pages-aboutus-js": preferDefault(__webpack_require__(/*! ./src/pages/aboutus.js */ "./src/pages/aboutus.js")),
-  "component---src-pages-blog-list-js": preferDefault(__webpack_require__(/*! ./src/pages/blog-list.js */ "./src/pages/blog-list.js")),
-  "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")),
-  "component---src-pages-news-js": preferDefault(__webpack_require__(/*! ./src/pages/news.js */ "./src/pages/news.js"))
+  "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))
   }
 
 
@@ -5832,6 +5829,16 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/aos/dist/aos.js":
+/*!**************************************!*\
+  !*** ./node_modules/aos/dist/aos.js ***!
+  \**************************************/
+/***/ (function(module) {
+
+!function(e,t){ true?module.exports=t():0}(this,function(){return function(e){function t(o){if(n[o])return n[o].exports;var i=n[o]={exports:{},id:o,loaded:!1};return e[o].call(i.exports,i,i.exports,t),i.loaded=!0,i.exports}var n={};return t.m=e,t.c=n,t.p="dist/",t(0)}([function(e,t,n){"use strict";function o(e){return e&&e.__esModule?e:{default:e}}var i=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var o in n)Object.prototype.hasOwnProperty.call(n,o)&&(e[o]=n[o])}return e},r=n(1),a=(o(r),n(6)),u=o(a),c=n(7),s=o(c),f=n(8),d=o(f),l=n(9),p=o(l),m=n(10),b=o(m),v=n(11),y=o(v),g=n(14),h=o(g),w=[],k=!1,x={offset:120,delay:0,easing:"ease",duration:400,disable:!1,once:!1,startEvent:"DOMContentLoaded",throttleDelay:99,debounceDelay:50,disableMutationObserver:!1},j=function(){var e=arguments.length>0&&void 0!==arguments[0]&&arguments[0];if(e&&(k=!0),k)return w=(0,y.default)(w,x),(0,b.default)(w,x.once),w},O=function(){w=(0,h.default)(),j()},M=function(){w.forEach(function(e,t){e.node.removeAttribute("data-aos"),e.node.removeAttribute("data-aos-easing"),e.node.removeAttribute("data-aos-duration"),e.node.removeAttribute("data-aos-delay")})},S=function(e){return e===!0||"mobile"===e&&p.default.mobile()||"phone"===e&&p.default.phone()||"tablet"===e&&p.default.tablet()||"function"==typeof e&&e()===!0},_=function(e){x=i(x,e),w=(0,h.default)();var t=document.all&&!window.atob;return S(x.disable)||t?M():(x.disableMutationObserver||d.default.isSupported()||(console.info('\n      aos: MutationObserver is not supported on this browser,\n      code mutations observing has been disabled.\n      You may have to call "refreshHard()" by yourself.\n    '),x.disableMutationObserver=!0),document.querySelector("body").setAttribute("data-aos-easing",x.easing),document.querySelector("body").setAttribute("data-aos-duration",x.duration),document.querySelector("body").setAttribute("data-aos-delay",x.delay),"DOMContentLoaded"===x.startEvent&&["complete","interactive"].indexOf(document.readyState)>-1?j(!0):"load"===x.startEvent?window.addEventListener(x.startEvent,function(){j(!0)}):document.addEventListener(x.startEvent,function(){j(!0)}),window.addEventListener("resize",(0,s.default)(j,x.debounceDelay,!0)),window.addEventListener("orientationchange",(0,s.default)(j,x.debounceDelay,!0)),window.addEventListener("scroll",(0,u.default)(function(){(0,b.default)(w,x.once)},x.throttleDelay)),x.disableMutationObserver||d.default.ready("[data-aos]",O),w)};e.exports={init:_,refresh:j,refreshHard:O}},function(e,t){},,,,,function(e,t){(function(t){"use strict";function n(e,t,n){function o(t){var n=b,o=v;return b=v=void 0,k=t,g=e.apply(o,n)}function r(e){return k=e,h=setTimeout(f,t),M?o(e):g}function a(e){var n=e-w,o=e-k,i=t-n;return S?j(i,y-o):i}function c(e){var n=e-w,o=e-k;return void 0===w||n>=t||n<0||S&&o>=y}function f(){var e=O();return c(e)?d(e):void(h=setTimeout(f,a(e)))}function d(e){return h=void 0,_&&b?o(e):(b=v=void 0,g)}function l(){void 0!==h&&clearTimeout(h),k=0,b=w=v=h=void 0}function p(){return void 0===h?g:d(O())}function m(){var e=O(),n=c(e);if(b=arguments,v=this,w=e,n){if(void 0===h)return r(w);if(S)return h=setTimeout(f,t),o(w)}return void 0===h&&(h=setTimeout(f,t)),g}var b,v,y,g,h,w,k=0,M=!1,S=!1,_=!0;if("function"!=typeof e)throw new TypeError(s);return t=u(t)||0,i(n)&&(M=!!n.leading,S="maxWait"in n,y=S?x(u(n.maxWait)||0,t):y,_="trailing"in n?!!n.trailing:_),m.cancel=l,m.flush=p,m}function o(e,t,o){var r=!0,a=!0;if("function"!=typeof e)throw new TypeError(s);return i(o)&&(r="leading"in o?!!o.leading:r,a="trailing"in o?!!o.trailing:a),n(e,t,{leading:r,maxWait:t,trailing:a})}function i(e){var t="undefined"==typeof e?"undefined":c(e);return!!e&&("object"==t||"function"==t)}function r(e){return!!e&&"object"==("undefined"==typeof e?"undefined":c(e))}function a(e){return"symbol"==("undefined"==typeof e?"undefined":c(e))||r(e)&&k.call(e)==d}function u(e){if("number"==typeof e)return e;if(a(e))return f;if(i(e)){var t="function"==typeof e.valueOf?e.valueOf():e;e=i(t)?t+"":t}if("string"!=typeof e)return 0===e?e:+e;e=e.replace(l,"");var n=m.test(e);return n||b.test(e)?v(e.slice(2),n?2:8):p.test(e)?f:+e}var c="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},s="Expected a function",f=NaN,d="[object Symbol]",l=/^\s+|\s+$/g,p=/^[-+]0x[0-9a-f]+$/i,m=/^0b[01]+$/i,b=/^0o[0-7]+$/i,v=parseInt,y="object"==("undefined"==typeof t?"undefined":c(t))&&t&&t.Object===Object&&t,g="object"==("undefined"==typeof self?"undefined":c(self))&&self&&self.Object===Object&&self,h=y||g||Function("return this")(),w=Object.prototype,k=w.toString,x=Math.max,j=Math.min,O=function(){return h.Date.now()};e.exports=o}).call(t,function(){return this}())},function(e,t){(function(t){"use strict";function n(e,t,n){function i(t){var n=b,o=v;return b=v=void 0,O=t,g=e.apply(o,n)}function r(e){return O=e,h=setTimeout(f,t),M?i(e):g}function u(e){var n=e-w,o=e-O,i=t-n;return S?x(i,y-o):i}function s(e){var n=e-w,o=e-O;return void 0===w||n>=t||n<0||S&&o>=y}function f(){var e=j();return s(e)?d(e):void(h=setTimeout(f,u(e)))}function d(e){return h=void 0,_&&b?i(e):(b=v=void 0,g)}function l(){void 0!==h&&clearTimeout(h),O=0,b=w=v=h=void 0}function p(){return void 0===h?g:d(j())}function m(){var e=j(),n=s(e);if(b=arguments,v=this,w=e,n){if(void 0===h)return r(w);if(S)return h=setTimeout(f,t),i(w)}return void 0===h&&(h=setTimeout(f,t)),g}var b,v,y,g,h,w,O=0,M=!1,S=!1,_=!0;if("function"!=typeof e)throw new TypeError(c);return t=a(t)||0,o(n)&&(M=!!n.leading,S="maxWait"in n,y=S?k(a(n.maxWait)||0,t):y,_="trailing"in n?!!n.trailing:_),m.cancel=l,m.flush=p,m}function o(e){var t="undefined"==typeof e?"undefined":u(e);return!!e&&("object"==t||"function"==t)}function i(e){return!!e&&"object"==("undefined"==typeof e?"undefined":u(e))}function r(e){return"symbol"==("undefined"==typeof e?"undefined":u(e))||i(e)&&w.call(e)==f}function a(e){if("number"==typeof e)return e;if(r(e))return s;if(o(e)){var t="function"==typeof e.valueOf?e.valueOf():e;e=o(t)?t+"":t}if("string"!=typeof e)return 0===e?e:+e;e=e.replace(d,"");var n=p.test(e);return n||m.test(e)?b(e.slice(2),n?2:8):l.test(e)?s:+e}var u="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},c="Expected a function",s=NaN,f="[object Symbol]",d=/^\s+|\s+$/g,l=/^[-+]0x[0-9a-f]+$/i,p=/^0b[01]+$/i,m=/^0o[0-7]+$/i,b=parseInt,v="object"==("undefined"==typeof t?"undefined":u(t))&&t&&t.Object===Object&&t,y="object"==("undefined"==typeof self?"undefined":u(self))&&self&&self.Object===Object&&self,g=v||y||Function("return this")(),h=Object.prototype,w=h.toString,k=Math.max,x=Math.min,j=function(){return g.Date.now()};e.exports=n}).call(t,function(){return this}())},function(e,t){"use strict";function n(e){var t=void 0,o=void 0,i=void 0;for(t=0;t<e.length;t+=1){if(o=e[t],o.dataset&&o.dataset.aos)return!0;if(i=o.children&&n(o.children))return!0}return!1}function o(){return window.MutationObserver||window.WebKitMutationObserver||window.MozMutationObserver}function i(){return!!o()}function r(e,t){var n=window.document,i=o(),r=new i(a);u=t,r.observe(n.documentElement,{childList:!0,subtree:!0,removedNodes:!0})}function a(e){e&&e.forEach(function(e){var t=Array.prototype.slice.call(e.addedNodes),o=Array.prototype.slice.call(e.removedNodes),i=t.concat(o);if(n(i))return u()})}Object.defineProperty(t,"__esModule",{value:!0});var u=function(){};t.default={isSupported:i,ready:r}},function(e,t){"use strict";function n(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(){return navigator.userAgent||navigator.vendor||window.opera||""}Object.defineProperty(t,"__esModule",{value:!0});var i=function(){function e(e,t){for(var n=0;n<t.length;n++){var o=t[n];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,n,o){return n&&e(t.prototype,n),o&&e(t,o),t}}(),r=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i,a=/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i,u=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i,c=/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i,s=function(){function e(){n(this,e)}return i(e,[{key:"phone",value:function(){var e=o();return!(!r.test(e)&&!a.test(e.substr(0,4)))}},{key:"mobile",value:function(){var e=o();return!(!u.test(e)&&!c.test(e.substr(0,4)))}},{key:"tablet",value:function(){return this.mobile()&&!this.phone()}}]),e}();t.default=new s},function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=function(e,t,n){var o=e.node.getAttribute("data-aos-once");t>e.position?e.node.classList.add("aos-animate"):"undefined"!=typeof o&&("false"===o||!n&&"true"!==o)&&e.node.classList.remove("aos-animate")},o=function(e,t){var o=window.pageYOffset,i=window.innerHeight;e.forEach(function(e,r){n(e,i+o,t)})};t.default=o},function(e,t,n){"use strict";function o(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var i=n(12),r=o(i),a=function(e,t){return e.forEach(function(e,n){e.node.classList.add("aos-init"),e.position=(0,r.default)(e.node,t.offset)}),e};t.default=a},function(e,t,n){"use strict";function o(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var i=n(13),r=o(i),a=function(e,t){var n=0,o=0,i=window.innerHeight,a={offset:e.getAttribute("data-aos-offset"),anchor:e.getAttribute("data-aos-anchor"),anchorPlacement:e.getAttribute("data-aos-anchor-placement")};switch(a.offset&&!isNaN(a.offset)&&(o=parseInt(a.offset)),a.anchor&&document.querySelectorAll(a.anchor)&&(e=document.querySelectorAll(a.anchor)[0]),n=(0,r.default)(e).top,a.anchorPlacement){case"top-bottom":break;case"center-bottom":n+=e.offsetHeight/2;break;case"bottom-bottom":n+=e.offsetHeight;break;case"top-center":n+=i/2;break;case"bottom-center":n+=i/2+e.offsetHeight;break;case"center-center":n+=i/2+e.offsetHeight/2;break;case"top-top":n+=i;break;case"bottom-top":n+=e.offsetHeight+i;break;case"center-top":n+=e.offsetHeight/2+i}return a.anchorPlacement||a.offset||isNaN(t)||(o=t),n+o};t.default=a},function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=function(e){for(var t=0,n=0;e&&!isNaN(e.offsetLeft)&&!isNaN(e.offsetTop);)t+=e.offsetLeft-("BODY"!=e.tagName?e.scrollLeft:0),n+=e.offsetTop-("BODY"!=e.tagName?e.scrollTop:0),e=e.offsetParent;return{top:n,left:t}};t.default=n},function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=function(e){return e=e||document.querySelectorAll("[data-aos]"),Array.prototype.map.call(e,function(e){return{node:e}})};t.default=n}])});
+
+/***/ }),
+
 /***/ "./node_modules/classnames/index.js":
 /*!******************************************!*\
   !*** ./node_modules/classnames/index.js ***!
@@ -9457,102 +9464,9 @@ const ItalicHeading = ({
 
 /***/ }),
 
-/***/ "./src/components/about/header.js":
-/*!****************************************!*\
-  !*** ./src/components/about/header.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_about_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/about/header.css */ "./src/styles/about/header.css");
-/* harmony import */ var _styles_about_header_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_about_header_css__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-function Header() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "header"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "img",
-    src: "https://static.tildacdn.com/tild3731-3038-4362-b362-353130656366/image_116.png"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "headerPara"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Berlin based, Razor buys Amazon FBA merchants that impress with their high product quality and strong customer ratings.")));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
-
-/***/ }),
-
-/***/ "./src/components/about/ourinvestor.js":
-/*!*********************************************!*\
-  !*** ./src/components/about/ourinvestor.js ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_about_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/about/header.css */ "./src/styles/about/header.css");
-/* harmony import */ var _styles_about_header_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_about_header_css__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-function Ourinvestor() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "text-gray-600 body-font",
-    style: {
-      backgroundColor: "#eeeeee"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "investorstitle"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "invh1"
-  }, "OUR INVESTORS "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "invh2"
-  }, "We successfully raised a total of over 450 million dollar in debt and equity.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "object-cover object-center rounded",
-    alt: "hero",
-    src: "https://thumb.tildacdn.com/tild3934-3137-4364-b862-323361363438/-/resize/560x/-/format/webp/Group_3108.png"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-8 leading-relaxed",
-    style: {
-      fontWeight: "500",
-      fontSize: "15px",
-      textAlign: "left"
-    }
-  }, "After successfully raising a pre-seed funding, we managed to secure our Series A funding with a combination of debt and equity including our existing shareholder RedAlpine, 468 Capital, Presight Capital, Global Founders Capital and Claret Capital Partners. Including our series A funding we have raised a total of $70 million in debt and equity. Followed by our recent series A+ funding of additional $400 million of capital by Victory Park Capital Advisors and BlackRock. This way we have the opportunity to significantly scale the business. Our shareholder contribute their extensive e-commerce expertise as well as their networks of institutional star investors. In addition, we also have prominent angel investors on board, including serial entrepreneurs & investors such as Mato Peric (CARS24, Choco, Scalable Capital etc.) and Roman Khan (Linjer, Raycon, Lazada etc.) as well as capital market experts such as Manuel Stotz (CEO Kingsway Capital), Stefan Jung (CIO Antler), the Scalable Capital founders Erik Podzuweit & Florian Prucker, and others."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "invtend"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "invttitle"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "comma"
-  }, " \""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, " We firmly believe and know from experience that not just the founders, but the entire shareholder group is crucial for a company to succeed"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Suleman Ahmed, Co Founder Bilal-Tech"))));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Ourinvestor);
-
-/***/ }),
-
-/***/ "./src/components/about/ourstory.js":
+/***/ "./src/components/footer/footer1.js":
 /*!******************************************!*\
-  !*** ./src/components/about/ourstory.js ***!
+  !*** ./src/components/footer/footer1.js ***!
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -9563,803 +9477,136 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Reusable-Components/Button */ "./src/Reusable-Components/Button.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! aos/dist/aos.css */ "./node_modules/aos/dist/aos.css");
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_4__);
 
 
-function Ourstory() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "text-gray-600 body-font"
+
+
+
+
+function Footer() {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    aos__WEBPACK_IMPORTED_MODULE_3___default().init({
+      duration: 2000
+    });
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
+    className: "text-gray-600 body-font footer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+    className: "container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "object-cover object-center rounded",
-    alt: "hero",
-    src: "https://static.tildacdn.com/tild3862-3862-4261-b831-303163616337/ENDOMRAZOR_MOODS_846.jpg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-900",
-    style: {
-      color: "#3b66ea"
-    }
-  }, "Our Story"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-8 leading-relaxed",
-    style: {
-      fontWeight: "500",
-      fontSize: "20px",
-      textAlign: "left"
-    }
-  }, "We use significant growth capital, paired with extensive e-commerce expertise in order to take these acquired merchants to the next stage of development. Razor is the new-age consumer holding with a clear strategic focus on specific product categories, long-term value enhancement and first-class customer satisfaction. Our young team has a strong vision, excitement for growth and new challenges."))));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Ourstory);
-
-/***/ }),
-
-/***/ "./src/components/about/ourvalues.js":
-/*!*******************************************!*\
-  !*** ./src/components/about/ourvalues.js ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_about_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/about/header.css */ "./src/styles/about/header.css");
-/* harmony import */ var _styles_about_header_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_about_header_css__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-function Ourvalues() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "text-gray-600 body-font"
+    className: "flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "titlestyle",
-    style: {
-      display: "flex",
-      flexDirection: 'column',
-      marginLeft: "4%"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    style: {
-      fontSize: "25px",
-      color: "#3b66ea",
-      marginBottom: "3%"
-    }
-  }, "OUR VALUES & BELIEFS "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    style: {
-      fontSize: "28px",
-      color: "black",
-      width: "50%"
-    }
-  }, "With empathy, qualification and perseverance we are here to take over your Amazon FBA business.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-8 leading-relaxed",
-    style: {
-      fontWeight: "500",
-      fontSize: "20px",
-      textAlign: "left"
-    }
-  }, "We believe that almost anyone can aquire companies. However not everyone has access to the resources and expertise to keep a business viable and make it grow. That is what we are here for! With 10+ years of experience in e-commerce, building brands and guiding companies we are confident that we can push your business to the next level.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "object-cover object-center rounded",
-    alt: "hero",
-    src: "https://thumb.tildacdn.com/tild3632-3238-4161-b963-373663373661/-/resize/560x/-/format/webp/ENDOMRAZOR_MOODS_844.jpg"
-  }))));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Ourvalues);
-
-/***/ }),
-
-/***/ "./src/components/about/teamprofile.js":
-/*!*********************************************!*\
-  !*** ./src/components/about/teamprofile.js ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_about_team_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/about/team.css */ "./src/styles/about/team.css");
-/* harmony import */ var _styles_about_team_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_about_team_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _my_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./my.jpeg */ "./src/components/about/my.jpeg");
-
-
-
-
-function Teamprofile() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "containers"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "teamheading"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Exceptional team with 10+ years of experience in e-commerce, building brands and guiding companies."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "We strive to grow, build leading companies and are a team on a joint mission")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "rowww"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-lg-4 col-md-6 teamCont"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__item set-bg",
-    style: {
-      backgroundImage: `url('${_my_jpeg__WEBPACK_IMPORTED_MODULE_2__.default}')`
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__text"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Furkan Giray"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Web Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean ultricies nisl sit amet."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-facebook"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-twitter"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-instagram"
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-lg-4 col-md-6 teamCont"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__item set-bg",
-    style: {
-      backgroundImage: 'url("https://www.hawtcelebs.com/wp-content/uploads/2021/04/ester-exposito-for-elle-magazine-spain-may-2021-3.jpg")'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__text"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Furkan Giray"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Web Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean ultricies nisl sit amet."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-facebook"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-twitter"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-instagram"
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-lg-4 col-md-6 teamCont"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__item set-bg",
-    style: {
-      backgroundImage: 'url("https://wallpapercave.com/wp/wp7905062.jpg")'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__text"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Furkan Giray"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Web Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean ultricies nisl sit amet."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-facebook"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-twitter"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-instagram"
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-lg-4 col-md-6 teamCont"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__item set-bg",
-    style: {
-      backgroundImage: 'url("https://www.hawtcelebs.com/wp-content/uploads/2021/04/ester-exposito-for-elle-magazine-spain-may-2021-3.jpg")'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__text"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Furkan Giray"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Web Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean ultricies nisl sit amet."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "team__social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-facebook"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-twitter"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa fa-instagram"
-  }))))))));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Teamprofile);
-
-/***/ }),
-
-/***/ "./src/components/about/viewjob.js":
-/*!*****************************************!*\
-  !*** ./src/components/about/viewjob.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-
-function Viewjob() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "text-gray-600 body-font",
-    style: {
-      backgroundColor: "#2863e9",
-      paddingTop: "2%",
-      paddingBottom: "3%"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900",
-    style: {
-      color: "white",
-      fontSize: "35px",
-      width: "70%"
-    }
-  }, "We are experiencing a continous growth spurt and are always looking for talents with a hands-on mentality to enrich our team."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-8 leading-relaxed",
-    style: {
-      color: "white"
-    }
-  }, "Join us on our mission full of growth."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex justify-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    className: "ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
-  }, "View Job")))));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Viewjob);
-
-/***/ }),
-
-/***/ "./src/components/about/why.js":
-/*!*************************************!*\
-  !*** ./src/components/about/why.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_about_why_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/about/why.css */ "./src/styles/about/why.css");
-/* harmony import */ var _styles_about_why_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_about_why_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _whycover_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./whycover.jpg */ "./src/components/about/whycover.jpg");
-
-
-
-
-function Why() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "why"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "whycont"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "whyh1"
-  }, " WHY LIFE AND HALF"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "whyh2"
-  }, "We know how to navigate the Amazon ecosystem, stabilize brands and enable them to grow. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "whyp"
-  }, "We are not a broker but your potential buyer. We see ourselves as partners of entrepreneurs whose products occupy a successful niche. From founders, for founders - that is our main principle. ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: _whycover_jpg__WEBPACK_IMPORTED_MODULE_2__.default,
-    className: "whyimg"
-  }));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Why);
-
-/***/ }),
-
-/***/ "./src/components/blog-list/BlockComponent.jsx":
-/*!*****************************************************!*\
-  !*** ./src/components/blog-list/BlockComponent.jsx ***!
-  \*****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_blog_list_blockComponent_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/blog-list/blockComponent.css */ "./src/styles/blog-list/blockComponent.css");
-/* harmony import */ var _styles_blog_list_blockComponent_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_blog_list_blockComponent_css__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-const BlockComponent = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("style", {
-    type: "text/css",
-    dangerouslySetInnerHTML: {
-      __html: '.item-157 .card{border-color:#d04021;background-color: #d04021}.item-157 .card:hover{border-color:#d04021;background-color: #d04021}.item-294 .card:hover{border-color:#20305d;background-color: #20305d}.item-304 .card:hover{border-color:#b56574;background-color: #b56574}'
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "bg-black section-dark pb-11"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      textAlign: 'center'
-    },
-    className: "mt-40 mb-20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "blockComponent__heading"
-  }, "TRUSTED BY 200+ OF THE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "blockComponent__heading"
-  }, "FASTEST-GROWING BRANDS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "blockComponent__para"
-  }, "See the impact with our customer stories")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    id: "customer-stories",
-    className: "blog-loop ajax-container container mb-20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row no-gutters gx-0 ajax-loop"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "w-100"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row gx-0 no-gutters align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-md-6 gx-0 row no-gutters align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item justify-content-center d-flex item-318 col-6"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white w-100 rounded-0",
-    href: "https://www.usehero.com/customer-stories/untuckit-and-hero-partner-to-help-online-shoppers-find-the-perfect-fit/",
-    title: "UNTUCKit and HERO\xAE Partner to Help Online Shoppers Find the Perfect Fit",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/icRetailerTileUntuckit.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-194 col-6"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white w-100 rounded-0",
-    href: "https://www.usehero.com/customer-stories/rag-bone-and-hero-are-engineering-the-new-omni-experience/",
-    title: "rag & bone Helps Online Shoppers Find the Perfect Fit With HERO\xAE",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/icRetailerTileRagAndBone.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/icRetailerTileRagAndBone.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-261 col-6"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white w-100 rounded-0",
-    href: "https://www.usehero.com/customer-stories/nike-and-size-partners-with-hero-to-revolutionize-online-shopping/",
-    title: "size? Delivers Footwear Expertise Virtually With HERO\xAE",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/07/icRetailerTileSize.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/07/icRetailerTileSize.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item gx-0 d-flex item-327 col-6"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white w-100 rounded-0",
-    href: "https://www.usehero.com/customer-stories/how-harvey-nichols-is-creating-a-hyper-connected-army-of-personal-shoppers/",
-    title: "Harvey Nichols Is Taking Personal Shopping Virtual With HERO\xAE",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/icRetailerTileHarveyNichols.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/icRetailerTileHarveyNichols.svg\" class=\"c-img\" alt=\"\" />"), ' ')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      padding: 0,
-      border: '0.5px solid #d04021'
-    },
-    className: "item card-item d-flex item-157 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white ft__lg text-center w-100 rounded-0 p-20",
-    href: "https://www.usehero.com/customer-stories/hero-announces-partnership-with-herman-miller-group/",
-    title: "Herman Miller Group Extends High-Touch Service to Online Shoppers With HERO\xAE",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0 pb-4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/icRetailerHermanMiller.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/icRetailerHermanMiller.svg\" class=\"c-img\" alt=\"\" />")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body p-0 border-0 rounded-0 bg-transparent"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "card-title heading-xs mb-5",
-    style: {
-      fontSize: '25px'
-    }
-  }, "Herman Miller Group Extends High-Touch Service to Online Shoppers With HERO\xAE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer p-0 border-0 rounded-0 bg-transparent"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "card-text eyebrow-sm mb-0"
-  }, "Read full story")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-272 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white w-100 rounded-0",
-    href: "https://www.usehero.com/customer-stories/how-annoushka-ducas-mbe-is-putting-omnichannel-service-at-the-heart-of-her-annoushka-jewelry-brand/",
-    title: "Annoushka Brings Jewelry to Life Virtually With HERO\xAE",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/icRetailerTileAnnoushka.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/icRetailerTileAnnoushka.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-2523 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-case-study text-white w-100 rounded-0 card-disabled"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileNike.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileNike.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-1490 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white w-100 rounded-0",
-    href: "https://www.usehero.com/customer-stories/neals-yard-remedies-hero-partnership/",
-    title: "Neal\u2019s Yard Remedies & HERO\xAE Deliver Decades of Holistic Health & Beauty Virtually",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/icRetailerTileNealsYard.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/icRetailerTileNealsYard.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-2520 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-case-study text-white w-100 rounded-0 card-disabled"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileAliceAndOlivia.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileAliceAndOlivia.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-294 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white ft__sm w-100 rounded-0 p-10",
-    href: "https://www.usehero.com/customer-stories/selling-iconic-designs-online-how-jonathan-adler-maximizes-its-stores-potential-with-hero/",
-    title: "Jonathan Adler Delivers the Experience of the Showroom Virtually With HERO\xAE",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body p-0 border-0 rounded-0 bg-transparent"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "card-title heading-xs mb-5",
-    style: {
-      fontSize: '25px'
-    }
-  }, "\u201CHelps us bridge the gap between our physical and online showrooms.\u201D")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer p-0 border-0 rounded-0 bg-transparent d-flex justify-content-between align-items-end"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "card-text eyebrow-sm mb-0"
-  }, "Read full story"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/icRetailerJonathanAdler.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/icRetailerJonathanAdler.svg\" class=\"c-img\" alt=\"\" />"))))), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-2517 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-case-study text-white w-100 rounded-0 card-disabled"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileLevis.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileLevis.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-227 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white w-100 rounded-0",
-    href: "https://www.usehero.com/customer-stories/introducing-three-store-now-a-partnership-between-hero-and-three/",
-    title: "Three Partners With HERO\xAE to Launch Three Store Now",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/icRetailerTileThree.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/icRetailerTileThree.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-2888 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white w-100 rounded-0",
-    href: "https://www.usehero.com/customer-stories/innersense/",
-    title: "Innersense Delivers the Hair Salon Experience Virtually With HERO\xAE",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileInnersense.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileInnersense.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-2512 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-case-study text-white w-100 rounded-0 card-disabled"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileChloe.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileChloe.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-334 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white w-100 rounded-0",
-    href: "https://www.usehero.com/customer-stories/inside-heals-mission-to-stay-ahead-of-the-curve-with-style-advice-on-demand/",
-    title: "Heal\u2019s Delivers Centuries of Design Wisdom to Online Shoppers With HERO\xAE",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/icRetailerTileHeals.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/icRetailerTileHeals.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-2509 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-case-study text-white w-100 rounded-0 card-disabled"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileBerluti.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileBerluti.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-1093 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white w-100 rounded-0",
-    href: "https://www.usehero.com/customer-stories/accent-group-partners-with-hero-to-bring-virtual-shopping-to-its-global-brands/",
-    title: "Accent Group Partners With HERO\xAE to Bring Virtual Shopping to Its Global Brands",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/08/icRetailerTileAccentGroup.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/08/icRetailerTileAccentGroup.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-2895 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white w-100 rounded-0",
-    href: "https://www.usehero.com/customer-stories/the-detox-market/",
-    title: "The Detox Market Brings Green Beauty to Online Shoppers With HERO\xAE",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileTheDetoxMarket.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileTheDetoxMarket.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-304 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white ft__sm w-100 rounded-0 p-10",
-    href: "https://www.usehero.com/customer-stories/hero-announces-partnership-with-credo-beauty/",
-    title: "Credo Helps Online Shoppers Find Clean Beauty Virtually With HERO\xAE",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body p-0 border-0 rounded-0 bg-transparent"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "card-title heading-xs mb-5",
-    style: {
-      fontSize: '25px'
-    }
-  }, "\u201CWe are seeing off the chart results with virtual selling\u201D")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer p-0 border-0 rounded-0 bg-transparent d-flex justify-content-between align-items-end"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "card-text eyebrow-sm mb-0"
-  }, "Read full story"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/icRetailerCredo.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/icRetailerCredo.svg\" class=\"c-img\" alt=\"\" />"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-1600 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white w-100 rounded-0",
-    href: "https://www.usehero.com/customer-stories/faherty/",
-    title: "Faherty Teams Up With HERO\xAE to Launch Virtual Shopping Service",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileFaherty.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileFaherty.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-2491 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-case-study text-white w-100 rounded-0 card-disabled"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileClareV.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileClareV.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-1682 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "card card-case-study text-white w-100 rounded-0",
-    href: "https://www.usehero.com/customer-stories/abc-carpet-home-hero-partnership/",
-    title: "HERO\xAE Helps Bring abc carpet & home to a New Generation of Shoppers",
-    "data-wpel-link": "internal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/icRetailerTileAbcCarpetAndHome.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/icRetailerTileAbcCarpetAndHome.svg\" class=\"c-img\" alt=\"\" />"), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "item card-item d-flex item-2488 col-6 col-md-3"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-case-study text-white w-100 rounded-0 card-disabled"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "card-case-img justify-content-center d-flex text-center mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileAllBirds.svg",
-    className: "c-img lazyloaded",
-    alt: true,
-    "data-ll-status": "loaded"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, "<img src=\"https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileAllBirds.svg\" class=\"c-img\" alt=\"\" />"), ' '))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("style", {
-    type: "text/css",
-    dangerouslySetInnerHTML: {
-      __html: '.item-318 .card:hover{border-color:#192d4e;background-color: #192d4e}.item-194 .card:hover{border-color:#ffffff;background-color: #ffffff}.item-194 .card:hover .c-img{filter:invert(1)}.item-261 .card:hover{border-color:#ed6a2f;background-color: #ed6a2f}.item-327 .card:hover{border-color:#ffffff;background-color: #ffffff}.item-327 .card:hover .c-img{filter:invert(1)}.item-272 .card:hover{border-color:#e9ac4c;background-color: #e9ac4c}.item-1490 .card:hover{border-color:#061f5e;background-color: #061f5e}.item-227 .card:hover{border-color:#ffffff;background-color: #ffffff}.item-227 .card:hover .c-img{filter:invert(1)}.item-2888 .card:hover{border-color:#836e50;background-color: #836e50}.item-334 .card:hover{border-color:#4d637a;background-color: #4d637a}.item-1093 .card:hover{border-color:#ffffff;background-color: #ffffff}.item-1093 .card:hover .c-img{filter:invert(1)}.item-2895 .card:hover{border-color:#4c8791;background-color: #4c8791}.item-1600 .card:hover{border-color:#241f20;background-color: #241f20}.item-1682 .card:hover{border-color:#ffffff;background-color: #ffffff}.item-1682 .card:hover .c-img{filter:invert(1)}'
-    }
-  }), ' '));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlockComponent);
-
-/***/ }),
-
-/***/ "./src/components/blog-list/BlogCard.jsx":
-/*!***********************************************!*\
-  !*** ./src/components/blog-list/BlogCard.jsx ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Reusable_Components_Heading__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Reusable-Components/Heading */ "./src/Reusable-Components/Heading.jsx");
-/* harmony import */ var _styles_blog_list_blogCard_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/blog-list/blogCard.css */ "./src/styles/blog-list/blogCard.css");
-/* harmony import */ var _styles_blog_list_blogCard_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_blog_list_blogCard_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _svgs_arrow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../svgs/arrow */ "./src/svgs/arrow.js");
-
-
-
-
-
-const BlogCard = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      textAlign: 'center'
-    },
-    className: "mt-40 mb-20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "blogCard__heading"
-  }, "What's new?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "blogCard__para"
-  }, " Explore our latest news and industry insights.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "blogCard__main"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "blogCard__cards"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "blogCard__cards_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "blogCard__card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "blogCard__card_image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/tif-axelarigato-300dpi-02_v3-800x450.jpeg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "blogCard__card_content"
+    "data-aos": "fade-right",
+    className: "lg:w-1/4 md:w-1/2 w-full px-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "blogCard__card_title"
-  }, "newsroom"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "blogCard__card_text"
-  }, "Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO\xAE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "blogCard__btn card_btn"
-  }, "12-10-2021")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "blogCard__cards_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "blogCard__card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "blogCard__card_image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/Beautylivestreaming-800x450.jpg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "blogCard__card_content"
+    style: {
+      fontSize: "18px",
+      fontWeight: "600",
+      fontFamily: "Marr Sans Web, Helvetica Neue, HelveticaNeue-Light, Helvetica Neue Light, Helvetica, Arial, Lucida Grande, sans-serif"
+    },
+    className: "title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+  }, "QUICK LINKS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+    className: "list-none mb-10 blog-list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/",
+    className: "text-gray-600 hover:text-black-800"
+  }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "blog-list",
+    className: "text-gray-600 hover:text-black-800"
+  }, "Customer Stories")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "aboutus",
+    className: "text-gray-600 hover:text-black-800"
+  }, "About Us")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    "data-aos": "fade-right",
+    className: "lg:w-1/4 md:w-1/2 w-full px-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "blogCard__card_title"
-  }, "Card Grid Layout"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "blogCard__card_text"
-  }, "The Do\u2019s and Don\u2019ts of Beauty Livestream Shopping"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "blogCard__btn card_btn"
-  }, "12-10-2021"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "blogCard-button"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    className: "blogCard-btn mt-10"
-  }, "latest news", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_3__.default, null)))));
-};
+    style: {
+      fontSize: "18px",
+      fontWeight: "600",
+      fontFamily: "Marr Sans Web, Helvetica Neue, HelveticaNeue-Light, Helvetica Neue Light, Helvetica, Arial, Lucida Grande, sans-serif"
+    },
+    className: "title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+  }, "CONTACT US"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+    className: "list-none mb-10"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "zayn84041@gmail.com")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Reusable_Components_Button__WEBPACK_IMPORTED_MODULE_2__.default, {
+    title: "demo"
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "bg-gray-100"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "text-gray-500 text-sm text-center sm:text-left"
+  }, "\xA9 2020 Life And Half"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "text-gray-500"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+    fill: "currentColor",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    className: "w-5 h-5",
+    viewBox: "0 0 24 24"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+    d: "M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "ml-3 text-gray-500"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+    fill: "currentColor",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    className: "w-5 h-5",
+    viewBox: "0 0 24 24"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+    d: "M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "ml-3 text-gray-500"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+    fill: "none",
+    stroke: "currentColor",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    className: "w-5 h-5",
+    viewBox: "0 0 24 24"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("rect", {
+    width: 20,
+    height: 20,
+    x: 2,
+    y: 2,
+    rx: 5,
+    ry: 5
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+    d: "M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "ml-3 text-gray-500"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+    fill: "currentColor",
+    stroke: "currentColor",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 0,
+    className: "w-5 h-5",
+    viewBox: "0 0 24 24"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+    stroke: "none",
+    d: "M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("circle", {
+    cx: 4,
+    cy: 4,
+    r: 2,
+    stroke: "none"
+  })))))));
+}
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlogCard);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
 
 /***/ }),
 
@@ -10523,11 +9770,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_home_getStarted_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/home/getStarted.css */ "./src/styles/home/getStarted.css");
 /* harmony import */ var _styles_home_getStarted_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_home_getStarted_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! aos/dist/aos.css */ "./node_modules/aos/dist/aos.css");
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_4__);
+
+
 
 
 
 
 const GetStarted = () => {
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    aos__WEBPACK_IMPORTED_MODULE_3___default().init({
+      duration: 2000
+    });
+  }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("section", {
     style: {
       overflowY: 'hidden'
@@ -10536,6 +9794,7 @@ const GetStarted = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "container px-5 py-24 mx-auto"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+    "data-aos": "fade-up",
     className: "xl:w-2/2 lg:w-3/4 w-full mx-auto text-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "getStarted__icon"
@@ -10588,6 +9847,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_home_middleContent_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_home_middleContent_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _svgs_arrow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../svgs/arrow */ "./src/svgs/arrow.js");
 /* harmony import */ var _dummy_data_midContent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dummy-data/midContent */ "./src/components/home/dummy-data/midContent.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! aos/dist/aos.css */ "./node_modules/aos/dist/aos.css");
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_7__);
+
+
 
 
 
@@ -10596,22 +9861,30 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const MiddleContent = () => {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    aos__WEBPACK_IMPORTED_MODULE_6___default().init({
+      duration: 2000
+    });
+  }, []);
   const {
     0: midContent,
     1: setMidContent
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_dummy_data_midContent__WEBPACK_IMPORTED_MODULE_5__.MidContent);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "middle-comtent"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    "data-aos": "fade-up"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Reusable_Components_ItalicHeading__WEBPACK_IMPORTED_MODULE_2__.default, {
     heading: "BE THERE. VIRTUALLY.",
     desc1: "Your customers love to watch, chat and video call.",
     desc2: "Now they can shop with you the same way."
-  }), midContent.map((items, index) => {
+  })), midContent.map((items, index) => {
     return items.left ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
       className: "text-gray-600 body-font"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      "data-aos": "fade-up",
       className: "lg:flex-grow md:w-1/2 lg:pr-60 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       className: "w-25 h-25 mb-8 object-cover object-center inline-block",
@@ -10683,6 +9956,7 @@ const MiddleContent = () => {
       style: {
         marginTop: '1rem'
       },
+      "data-aos": "fade-up",
       className: "lg:flex-grow md:w-1/2 lg:pl-60 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       className: "w-25 h-25 mb-8 object-cover object-center inline-block",
@@ -11161,7 +10435,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_nav_hamburger_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/nav/hamburger.css */ "./src/styles/nav/hamburger.css");
 /* harmony import */ var _styles_nav_hamburger_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_nav_hamburger_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _material_ui_icons_Cancel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Cancel */ "./node_modules/@material-ui/icons/Cancel.js");
+/* harmony import */ var _material_ui_icons_Cancel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/Cancel */ "./node_modules/@material-ui/icons/Cancel.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! aos/dist/aos.css */ "./node_modules/aos/dist/aos.css");
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_4__);
+
+
 
 
 
@@ -11170,29 +10450,51 @@ __webpack_require__.r(__webpack_exports__);
 let Hamburger = ({
   clickFunc
 }) => {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    aos__WEBPACK_IMPORTED_MODULE_3___default().init({
+      duration: 1000
+    });
+  }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    "data-aos": "fade-left",
+    "data-aos-duration": "2000",
     className: "hamburger"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "hamMenu"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "logoDiv"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: "hamLogo"
-  }, "Logo "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_material_ui_icons_Cancel__WEBPACK_IMPORTED_MODULE_3__.default, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    "data-aos": "fade-left",
+    "data-aos-duration": "3000"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: "hamburgerLogo",
+    src: "https://img.pngio.com/image-library-horizon-therapeutics-horizon-logo-png-3911_1676.jpg",
+    alt: "hero"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_material_ui_icons_Cancel__WEBPACK_IMPORTED_MODULE_5__.default, {
+    "data-aos": "fade-left",
+    "data-aos-duration": "3000",
     onClick: clickFunc,
     style: {
       fill: "white"
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "menu-sub"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    "data-aos": "fade-left",
+    "data-aos-duration": "3000"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     className: "ul",
-    to: "/"
-  }, "Customer Stories")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: "/blog-list"
+  }, "Customer Stories")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    "data-aos": "fade-left",
+    "data-aos-duration": "3000"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     className: "ul",
-    to: "/"
+    to: "/aboutus"
   }, "About Us")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    className: "hamBut"
+    "data-aos": "fade-left",
+    className: "hamBut",
+    "data-aos-duration": "3000"
   }, "GET STARTED"));
 };
 
@@ -11234,16 +10536,21 @@ const Navbar = () => {
     setShow(!show);
   };
 
+  console.log(show);
+  let url = 'https://i.pinimg.com/736x/8c/b0/8a/8cb08a963150553f12dc40795e5cb4a3.jpg';
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "Navbar"
+    className: show ? "Navbar" : null
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "logo"
-  }, !show ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Life And Half")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, !show ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: "loogo",
+    src: "https://img.pngio.com/image-library-horizon-therapeutics-horizon-logo-png-3911_1676.jpg"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "menu"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/"
+    to: "/blog-list"
   }, " Customer Stories "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/"
+    to: "/aboutus"
   }, " About Us")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "butDiv"
   }, !show ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
@@ -11258,560 +10565,6 @@ const Navbar = () => {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
-
-/***/ }),
-
-/***/ "./src/components/news/Feature.jsx":
-/*!*****************************************!*\
-  !*** ./src/components/news/Feature.jsx ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Feature": () => (/* binding */ Feature)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-const Feature = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "text-white body-font",
-    style: {
-      backgroundColor: '#7596e5'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container px-5 py-20 mx-auto"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "text-center mb-20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "sm:text-5xl text-2xl font-medium title-font text-white"
-  }, "Press Quotes")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "p-4 md:w-1/3 flex flex-col text-center items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      width: '10rem',
-      overflowY: 'hidden'
-    },
-    className: "w-20 h-20 inline-flex items-center justify-center rounded-full mb-10 flex-shrink-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/GQ.svg",
-    style: {
-      width: '200px',
-      height: '200px',
-      overflowY: 'hidden'
-    },
-    className: "w-50 h-50",
-    viewBox: "0 0 50 50"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex-grow"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    style: {
-      fontWeight: 300,
-      fontSize: '1.4rem'
-    },
-    className: "leading-relaxed text-base text-white"
-  }, "\u201CLike facetiming your favorite sales associate\u201D"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "p-4 md:w-1/3 flex flex-col text-center items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      width: '10rem',
-      overflowY: 'hidden'
-    },
-    className: "w-20 h-20 inline-flex items-center justify-center rounded-full mb-10 flex-shrink-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/WWD.svg",
-    style: {
-      width: '200px',
-      height: '200px',
-      overflowY: 'hidden'
-    },
-    className: "w-50 h-50",
-    viewBox: "0 0 50 50"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex-grow"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    style: {
-      fontWeight: 300,
-      fontSize: '1.4rem',
-      wordSpacing: '2px',
-      letterSpacing: '1px'
-    },
-    className: "leading-relaxed text-base text-white"
-  }, "\u201CHero \u2018humanizes\u2019 online shopping\u201D"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "p-4 md:w-1/3 flex flex-col text-center items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      width: '10rem',
-      overflowY: 'hidden'
-    },
-    className: "w-20 h-20 inline-flex items-center justify-center rounded-full mb-10 flex-shrink-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/SourcingJournal.svg",
-    style: {
-      width: '200px',
-      height: '200px',
-      overflowY: 'hidden'
-    },
-    className: "w-50 h-50",
-    viewBox: "0 0 50 50"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex-grow"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    style: {
-      fontWeight: 300,
-      fontSize: '1.4rem'
-    },
-    className: "leading-relaxed text-base text-white"
-  }, "\u201CShoppers are 21x more likely to buy through Hero\""))))));
-};
-
-/***/ }),
-
-/***/ "./src/components/news/InTheNews.jsx":
-/*!*******************************************!*\
-  !*** ./src/components/news/InTheNews.jsx ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_news_newsCards_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/news/newsCards.css */ "./src/styles/news/newsCards.css");
-/* harmony import */ var _styles_news_newsCards_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_news_newsCards_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_news_inTheNews_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/news/inTheNews.css */ "./src/styles/news/inTheNews.css");
-/* harmony import */ var _styles_news_inTheNews_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_news_inTheNews_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _svgs_arrow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../svgs/arrow */ "./src/svgs/arrow.js");
-
-
-
-
-
-const InTheNews = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container mt-20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", {
-    className: "heading-md text-5xl mb-7"
-  }, "In The News"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "in-the-news-row row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#7a8c6d"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "p-5 bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/VogueBusiness.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "bg-transparent rounded-0 border-0 font-size-xl pt-20 pb-10 px-5"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      fontWeight: '600'
-    },
-    className: "mb-2 pb-1"
-  }, "VIP clienteling gets a tech makeover."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0 mt-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    style: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      textTransform: 'uppercase',
-      width: '10rem'
-    },
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://www.voguebusiness.com/technology/vip-clienteling-gets-a-tech-makeover",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_svgs_arrow__WEBPACK_IMPORTED_MODULE_3__.default, null)))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#c29ce5"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/VogueBusiness.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "Post-pandemic playbook: Reviving US department stores."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://www.voguebusiness.com/consumers/post-pandemic-playbook-reviving-us-department-stores",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#035973"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/RetailOasis.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "Podcast Ep. 29 - Adam Levene, Founder of HERO\xAE."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://www.retailoasis.com/podcast/retail-podcast-hero-adam-levene",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#fcb09c"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/SourcingJournal.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "Virtual Shopping to the Rescue."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://issuu.com/sourcingjournalevents/docs/ri_21_copy_16.1_spreads",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#7596e5"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/TheIndustryFashion.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "Coronavirus closings create virtual consultation uptick in beauty."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://www.theindustry.fashion/liberty-officially-launches-virtual-shopping-experience-with-hero/",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#7a8c6d"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/ragtrader.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "Incu customers are 11 times more likely to buy because of this."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://www.ragtrader.com.au/news/incu-customers-are-11-times-more-likely-to-buy-because-of-this",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#c29ce5"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/WWD.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "Coronavirus closings create virtual consultation uptick in beauty."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://wwd.com/business-news/retail/hero-online-shopping-1234735264/",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#035973"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/Charged.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "Virtual shopping is set to be the next major trend in retail."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://www.chargedretail.co.uk/2021/01/05/virtual-shopping-is-set-to-be-the-next-major-trend-in-retail/",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-in-the-news col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card card-in-the-news rounded text-white w-100",
-    style: {
-      backgroundColor: "#fcb09c"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-body bg-transparent border-0 rounded-0 pb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/BOF.svg",
-    className: "in-the-news-img",
-    alt: true
-  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-footer bg-transparent rounded-0 border-0 font-size-xl pt-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mb-2 pb-1"
-  }, "How to Build a One-on-One Relationship With Your Customer."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "btn btn-lg btn-outline-white link-with-arrow",
-    href: "https://www.businessoffashion.com/articles/retail/how-to-build-a-one-on-one-relationship-with-your-customer?utm_source=daily-digest-newsletter&utm_campaign=1687947019214980&utm_term=11&utm_medium=email",
-    target: "_blank",
-    "data-wpel-link": "external",
-    rel: "external noopener noreferrer"
-  }, "Learn More")))))));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (InTheNews);
-
-/***/ }),
-
-/***/ "./src/components/news/NewsCards.jsx":
-/*!*******************************************!*\
-  !*** ./src/components/news/NewsCards.jsx ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_news_newsCards_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/news/newsCards.css */ "./src/styles/news/newsCards.css");
-/* harmony import */ var _styles_news_newsCards_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_news_newsCards_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_blog_list_blogCard_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/blog-list/blogCard.css */ "./src/styles/blog-list/blogCard.css");
-/* harmony import */ var _styles_blog_list_blogCard_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_blog_list_blogCard_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _svgs_arrow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../svgs/arrow */ "./src/svgs/arrow.js");
-
-
-
-
-
-const NewsCards = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__mainHeading mb-52 mt-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "NEWSROOM")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__main"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__heading mb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "latest news")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "news__cards"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "news__cards_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/tif-axelarigato-300dpi-02_v3-800x450.jpeg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "news__card_title"
-  }, "newsroom"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__card_text"
-  }, "Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO\xAE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__btn card_btn"
-  }, "12-10-2021")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "news__cards_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/HeroxTedBakerxCNN-1-800x533.jpg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "news__card_title"
-  }, "newsroom"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__card_text"
-  }, "Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO\xAE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__btn card_btn"
-  }, "12-10-2021")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "news__cards_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/Blog-Web-1920x1280-Faherty-2_1-1.gif"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "news__card_title"
-  }, "newsroom"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__card_text"
-  }, "Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO\xAE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__btn card_btn"
-  }, "12-10-2021")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "news__cards_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/tif-axelarigato-300dpi-02_v3-800x450.jpeg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "news__card_content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "news__card_title"
-  }, "newsroom"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__card_text"
-  }, "Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO\xAE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "news__btn card_btn"
-  }, "12-10-2021"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "blogCard-button"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    className: "blogCard-btn mt-10"
-  }, "load more"))));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NewsCards);
-
-/***/ }),
-
-/***/ "./src/pages/aboutus.js":
-/*!******************************!*\
-  !*** ./src/pages/aboutus.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ AboutUs)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _template_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/Layout */ "./src/template/Layout.js");
-/* harmony import */ var _components_about_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/about/header */ "./src/components/about/header.js");
-/* harmony import */ var _components_about_ourstory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/about/ourstory */ "./src/components/about/ourstory.js");
-/* harmony import */ var _components_about_ourvalues__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/about/ourvalues */ "./src/components/about/ourvalues.js");
-/* harmony import */ var _components_about_teamprofile__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/about/teamprofile */ "./src/components/about/teamprofile.js");
-/* harmony import */ var _components_about_ourinvestor__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/about/ourinvestor */ "./src/components/about/ourinvestor.js");
-/* harmony import */ var _components_about_why__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/about/why */ "./src/components/about/why.js");
-/* harmony import */ var _components_about_viewjob__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/about/viewjob */ "./src/components/about/viewjob.js");
-
-
-
-
-
-
-
-
-
-function AboutUs() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_template_Layout__WEBPACK_IMPORTED_MODULE_1__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_about_header__WEBPACK_IMPORTED_MODULE_2__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_about_ourstory__WEBPACK_IMPORTED_MODULE_3__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_about_ourvalues__WEBPACK_IMPORTED_MODULE_4__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_about_teamprofile__WEBPACK_IMPORTED_MODULE_5__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_about_ourinvestor__WEBPACK_IMPORTED_MODULE_6__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_about_why__WEBPACK_IMPORTED_MODULE_7__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_about_viewjob__WEBPACK_IMPORTED_MODULE_8__.default, null));
-}
-
-/***/ }),
-
-/***/ "./src/pages/blog-list.js":
-/*!********************************!*\
-  !*** ./src/pages/blog-list.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_blog_list_BlockComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/blog-list/BlockComponent */ "./src/components/blog-list/BlockComponent.jsx");
-/* harmony import */ var _components_blog_list_BlogCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/blog-list/BlogCard */ "./src/components/blog-list/BlogCard.jsx");
-/* harmony import */ var _components_home_GetStarted__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/home/GetStarted */ "./src/components/home/GetStarted.jsx");
-
-
-
-
-
-const blogList = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_blog_list_BlockComponent__WEBPACK_IMPORTED_MODULE_1__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_blog_list_BlogCard__WEBPACK_IMPORTED_MODULE_2__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_home_GetStarted__WEBPACK_IMPORTED_MODULE_3__.default, null));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (blogList);
 
 /***/ }),
 
@@ -11877,35 +10630,6 @@ function Home() {
 
 /***/ }),
 
-/***/ "./src/pages/news.js":
-/*!***************************!*\
-  !*** ./src/pages/news.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_news_Feature__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/news/Feature */ "./src/components/news/Feature.jsx");
-/* harmony import */ var _components_news_InTheNews__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/news/InTheNews */ "./src/components/news/InTheNews.jsx");
-/* harmony import */ var _components_news_NewsCards__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/news/NewsCards */ "./src/components/news/NewsCards.jsx");
-
-
-
-
-
-const News = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_news_NewsCards__WEBPACK_IMPORTED_MODULE_3__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_news_Feature__WEBPACK_IMPORTED_MODULE_1__.Feature, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_news_InTheNews__WEBPACK_IMPORTED_MODULE_2__.default, null));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (News);
-
-/***/ }),
-
 /***/ "./src/svgs/arrow.js":
 /*!***************************!*\
   !*** ./src/svgs/arrow.js ***!
@@ -11953,13 +10677,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_nav_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/nav/navbar */ "./src/components/nav/navbar.jsx");
+/* harmony import */ var _components_footer_footer1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/footer/footer1 */ "./src/components/footer/footer1.js");
+
 
 
 
 const Layout = ({
   children
 }) => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_nav_navbar__WEBPACK_IMPORTED_MODULE_1__.default, null), children);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_nav_navbar__WEBPACK_IMPORTED_MODULE_1__.default, null), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_footer_footer1__WEBPACK_IMPORTED_MODULE_2__.default, null));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
@@ -22611,6 +21337,16 @@ function mitt(all                 ) {
 
 /***/ }),
 
+/***/ "./node_modules/aos/dist/aos.css":
+/*!***************************************!*\
+  !*** ./node_modules/aos/dist/aos.css ***!
+  \***************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
 /***/ "./node_modules/slick-carousel/slick/slick-theme.css":
 /*!***********************************************************!*\
   !*** ./node_modules/slick-carousel/slick/slick-theme.css ***!
@@ -22635,56 +21371,6 @@ function mitt(all                 ) {
 /*!********************************************!*\
   !*** ./src/Reusable-Components/Button.css ***!
   \********************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./src/styles/about/header.css":
-/*!*************************************!*\
-  !*** ./src/styles/about/header.css ***!
-  \*************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./src/styles/about/team.css":
-/*!***********************************!*\
-  !*** ./src/styles/about/team.css ***!
-  \***********************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./src/styles/about/why.css":
-/*!**********************************!*\
-  !*** ./src/styles/about/why.css ***!
-  \**********************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./src/styles/blog-list/blockComponent.css":
-/*!*************************************************!*\
-  !*** ./src/styles/blog-list/blockComponent.css ***!
-  \*************************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./src/styles/blog-list/blogCard.css":
-/*!*******************************************!*\
-  !*** ./src/styles/blog-list/blogCard.css ***!
-  \*******************************************/
 /***/ (() => {
 
 
@@ -22795,26 +21481,6 @@ function mitt(all                 ) {
 /*!********************************!*\
   !*** ./src/styles/nav/nav.css ***!
   \********************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./src/styles/news/inTheNews.css":
-/*!***************************************!*\
-  !*** ./src/styles/news/inTheNews.css ***!
-  \***************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./src/styles/news/newsCards.css":
-/*!***************************************!*\
-  !*** ./src/styles/news/newsCards.css ***!
-  \***************************************/
 /***/ (() => {
 
 
@@ -55645,36 +54311,6 @@ function warning(condition, message) {
 
 /***/ }),
 
-/***/ "./src/components/about/my.jpeg":
-/*!**************************************!*\
-  !*** ./src/components/about/my.jpeg ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "static/my-ed7318baa0c80f032c860f6dce26519c.jpeg");
-
-/***/ }),
-
-/***/ "./src/components/about/whycover.jpg":
-/*!*******************************************!*\
-  !*** ./src/components/about/whycover.jpg ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "static/whycover-8bb19c3242d12725390ccd93cff922e5.jpg");
-
-/***/ }),
-
 /***/ "./src/video/heroVideo.mp4":
 /*!*********************************!*\
   !*** ./src/video/heroVideo.mp4 ***!
@@ -55754,7 +54390,7 @@ module.exports = require("path");;
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
