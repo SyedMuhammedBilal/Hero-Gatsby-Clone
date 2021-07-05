@@ -36,6 +36,13 @@ module.exports = {
         name: 'blog-post'
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/footer`,
+        name: 'footer'
+      }
+    },
     `gatsby-transformer-remark`,
     'gatsby-plugin-postcss'
   ],

@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../styles/blog-list/blockComponent.css';
 import BlockComponent_2 from './BlockComponent-2';
 import { useStaticQuery, graphql, Link } from "gatsby"
+import Aos from 'aos'
+import BlogMainHeading from './BlogMainHeading';
 
 const BlockComponent = () => {
 
@@ -27,8 +29,13 @@ const BlockComponent = () => {
       }
     }
   `)
+
+  useEffect(() => {
+	Aos.init({ duration: 1000 })
+}, [])
+
   const data = Block_Query_1?.allMarkdownRemark.edges
-  console.log(" ==> ",data)
+  
 	return (
 		<>
 			<style
@@ -40,12 +47,7 @@ const BlockComponent = () => {
 			/>
 
 			<div className="bg-black section-dark pb-11">
-				<div style={{ textAlign: 'center' }} className="mt-40 mb-20">
-					<h1 className="blockComponent__heading">TRUSTED BY 200+ OF THE</h1>
-					<h1 className="blockComponent__heading">FASTEST-GROWING BRANDS</h1>
-
-					<p className="blockComponent__para">See the impact with our customer stories</p>
-				</div>
+				<BlogMainHeading />
 				<section id="customer-stories" className="blog-loop ajax-container container mb-20">
 					<div className="row no-gutters gx-0 ajax-loop">
 						<div className="w-100">

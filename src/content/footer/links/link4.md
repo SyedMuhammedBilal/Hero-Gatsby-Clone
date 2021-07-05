@@ -1,0 +1,4 @@
+---
+link: ""
+path: "/footer/link"
+---

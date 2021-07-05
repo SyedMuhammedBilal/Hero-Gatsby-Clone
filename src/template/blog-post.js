@@ -1,12 +1,13 @@
 import { graphql } from 'gatsby'
 import React from 'react'
 import Header from '../components/blog-post/header'
+import Layout from './Layout'
 
 const BlogPost = ({ data }) => {
     return (
-        <div>
+        <Layout>
             <Header slugData={data} />
-        </div>
+        </Layout>
     )
 }
 

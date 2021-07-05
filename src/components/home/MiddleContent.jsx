@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Button from '../../Reusable-Components/Button';
 import ItalicHeading from '../../Reusable-Components/ItalicHeading';
 import '../../styles/home/middleContent.css'
 import Arrow from '../../svgs/arrow';
 import {MidContent} from './dummy-data/midContent';
 import { useStaticQuery, graphql } from "gatsby"
+import Aos from 'aos'
 
 const MiddleContent = () => {
     const [midContent, setMidContent] = useState(MidContent);
@@ -39,15 +40,22 @@ const MiddleContent = () => {
 
   const data = MidContentQuery?.allMarkdownRemark?.edges[0]?.node
 
+  useEffect(() => {
+		Aos.init({ duration: 1000 });
+	}, []);
+
     return (
         <div className="middle-comtent">
-            <ItalicHeading heading={data.frontmatter.title} desc1={data.frontmatter.desc} desc2={data.frontmatter.desc2} />
+          <div data-aos="fade-up">
+
+            <ItalicHeading  heading={data.frontmatter.title} desc1={data.frontmatter.desc} desc2={data.frontmatter.desc2} />
+          </div>
           {data?.frontmatter?.MidContent.map((items, index) => {
             return (
               (items.left) ?
                   <section key={index} className="text-gray-600 body-font">
                   <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                    <div className="lg:flex-grow md:w-1/2 lg:pr-60 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <div data-aos="fade-up" className="lg:flex-grow md:w-1/2 lg:pr-60 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                         <img 
                         className="w-25 h-25 mb-8 object-cover object-center inline-block"
                         src={items.icon}
@@ -90,7 +98,7 @@ const MiddleContent = () => {
                         <video className="object-cover object-center rounded" preload="auto" playsinline="" loop autoPlay muted poster="https://www.usehero.com/wp-content/uploads/2021/02/imgInspireStatic@2x.jpg">
                         <source src={items.video} />
                       </video></div>}
-                  <div style={{marginTop: '1rem'}} className="lg:flex-grow md:w-1/2 lg:pl-60 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                  <div style={{marginTop: '1rem'}} data-aos="fade-up" className="lg:flex-grow md:w-1/2 lg:pl-60 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
                       <img 
                       className="w-25 h-25 mb-8 object-cover object-center inline-block"
                       src={items.icon}

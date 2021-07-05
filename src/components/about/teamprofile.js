@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../styles/about/team.css';
 import Img from './my.jpeg';
 import { useStaticQuery, graphql } from 'gatsby';
+import Aos from 'aos'
 
 function Teamprofile() {
 	const Gallery_Query = useStaticQuery(graphql`
@@ -25,9 +26,13 @@ function Teamprofile() {
 	`);
 	const data = Gallery_Query?.allMarkdownRemark?.edges[0];
 
+	useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, [])
+
 	return (
 		<div className="containers">
-			<div className="teamheading">
+			<div data-aos="fade-up" className="teamheading">
 				<h1>{data?.frontmatter?.title}</h1>
 				<p>{data?.frontmatter?.desc}</p>
 			</div>

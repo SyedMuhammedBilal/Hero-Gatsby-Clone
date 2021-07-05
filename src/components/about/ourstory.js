@@ -50,8 +50,7 @@ function Ourstory() {
 									className="mb-8 leading-relaxed"
 									style={{ fontWeight: '500', fontSize: '20px', textAlign: 'left' }}
 								>
-									{' '}
-									{items?.description}{' '}
+									{items?.description}
 								</p>
 							</div>
 						</div>

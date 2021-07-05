@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../styles/about/header.css';
 import { useStaticQuery, graphql } from 'gatsby';
+import Aos from 'aos'
 
 function Ourinvestor() {
 	const Investors_Query = useStaticQuery(graphql`
@@ -22,11 +23,15 @@ function Ourinvestor() {
 		}
 	`);
 
+	useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, [])
+
 	const data = Investors_Query?.allMarkdownRemark?.edges[0]?.node;
 
 	return (
 		<section className="text-gray-600 body-font" style={{ backgroundColor: '#eeeeee' }}>
-			<div className="investorstitle">
+			<div data-aos="fade-up" className="investorstitle">
 				<h1 className="invh1"> {data?.frontmatter?.title} </h1>
 				<h1 className="invh2"> {data?.frontmatter?.slogan} </h1>
 			</div>
@@ -45,7 +50,7 @@ function Ourinvestor() {
 				</div>
 			</div>
 			<div className="invtend">
-				<div className="invttitle">
+				<div  data-aos="fade-right" className="invttitle">
 					<div className="comma"> "</div>
 					<h1> {data?.frontmatter?.subHeading} </h1>
 					<p> {data?.frontmatter?.para} </p>

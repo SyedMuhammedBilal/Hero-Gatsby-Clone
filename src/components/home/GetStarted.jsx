@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../styles/home/getStarted.css';
 import { useStaticQuery, graphql } from 'gatsby';
+import Aos from 'aos'
 
 const GetStarted = () => {
 	const GetStartedQuery = useStaticQuery(graphql`
@@ -25,10 +26,13 @@ const GetStarted = () => {
 		}
 	`);
 	const data = GetStartedQuery?.allMarkdownRemark?.edges[0]?.node.frontmatter;
+  useEffect(() => {
+		Aos.init({ duration: 1000 });
+	}, []);
 
 	return (
 		<section style={{ overflowY: 'hidden' }} className="text-gray-600 body-font getStarted__container">
-			<div className="container px-5 py-24 mx-auto">
+			<div data-aos="fade-up" className="container px-5 py-24 mx-auto">
 				<div className="xl:w-2/2 lg:w-3/4 w-full mx-auto text-center">
 					<div className="getStarted__icon">
 						<img src={data?.image} />
@@ -55,7 +59,7 @@ const GetStarted = () => {
 							<img src={data?.icon} />
 						</div>
 						<div className="getStarted-paragraph">
-							<p>{data?.para1}</p> <a style={{textDecoration: 'none'}} href={data?.para2Link}>{data?.para2}</a>
+							<p>{data?.para1}</p> <a href={data?.para2Link}>{data?.para2}</a>
 						</div>
 					</div>
 				</div>
