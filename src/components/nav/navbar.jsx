@@ -6,23 +6,9 @@ import Hamburger from './hamburger'
 
 
 const Navbar = () => {
-    const Navbar_Query = useStaticQuery(graphql`
-    {
-      allMarkdownRemark(filter: {frontmatter: {path: {eq: "/navbar"}}}) {
-        edges {
-          node {
-            frontmatter {
-              icon
-              button
-              link
-            }
-          }
-        }
-      }
-    }
-  `)
+
     const [show, setShow] = useState(true)
-    const data = Navbar_Query?.allMarkdownRemark?.edges[0]?.node?.frontmatter
+    // const data = Navbar_Query?.allMarkdownRemark?.edges[0]?.node?.frontmatter
     const HamShow = () => {
         setShow(!show)
     }
@@ -34,7 +20,7 @@ const Navbar = () => {
             <div className={show ? "Navbar" : null} >
                 <div className="logo" >
                     {!show ? null :
-                        <Link to="/"> <img className="loogo" src={data?.icon} /></Link>
+                        <Link to="/"> <img className="loogo" src="'https://img.pngio.com/image-library-horizon-therapeutics-horizon-logo-png-3911_1676.jpg'" /></Link>
 
                     }
 
@@ -47,8 +33,8 @@ const Navbar = () => {
                     </ul>
                     <div className="butDiv">
                         {!show ? null :
-                        <a style={{textDecoration: 'none'}} href={data?.link}>
-                            <button className="but" > {data?.button} </button> </a>}
+                        <a style={{textDecoration: 'none'}} >
+                            <button className="but" > GET STARTED </button> </a>}
 
 
 
