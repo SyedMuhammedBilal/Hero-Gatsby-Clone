@@ -6,7 +6,6 @@ import Hamburger from './hamburger'
 
 
 const Navbar = () => {
-    const [show, setShow] = useState(true)
     const Navbar_Query = useStaticQuery(graphql`
     {
       allMarkdownRemark(filter: {frontmatter: {path: {eq: "/navbar"}}}) {
@@ -22,6 +21,7 @@ const Navbar = () => {
       }
     }
   `)
+    const [show, setShow] = useState(true)
     const data = Navbar_Query?.allMarkdownRemark?.edges[0]?.node?.frontmatter
     const HamShow = () => {
         setShow(!show)
