@@ -1,5 +1,7 @@
 "use strict";
 
+var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
+
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
 exports.__esModule = true;
@@ -16,11 +18,10 @@ exports.Link = _gatsbyLink.default;
 exports.withPrefix = _gatsbyLink.withPrefix;
 exports.withAssetPrefix = _gatsbyLink.withAssetPrefix;
 exports.navigate = _gatsbyLink.navigate;
+exports.push = _gatsbyLink.push;
+exports.replace = _gatsbyLink.replace;
+exports.navigateTo = _gatsbyLink.navigateTo;
 exports.parsePath = _gatsbyLink.parsePath;
-
-var _gatsbyReactRouterScroll = require("gatsby-react-router-scroll");
-
-exports.useScrollRestoration = _gatsbyReactRouterScroll.useScrollRestoration;
 
 var _publicPageRenderer = _interopRequireDefault(require("./public-page-renderer"));
 
@@ -28,14 +29,10 @@ exports.PageRenderer = _publicPageRenderer.default;
 
 var _loader = _interopRequireDefault(require("./loader"));
 
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
-
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
 const prefetchPathname = _loader.default.enqueue;
 exports.prefetchPathname = prefetchPathname;
 
-const StaticQueryContext = /*#__PURE__*/_react.default.createContext({});
+const StaticQueryContext = _react.default.createContext({});
 
 exports.StaticQueryContext = StaticQueryContext;
 
@@ -67,8 +64,6 @@ const StaticQuery = props => {
 exports.StaticQuery = StaticQuery;
 
 const useStaticQuery = query => {
-  var _context$query;
-
   if (typeof _react.default.useContext !== `function` && process.env.NODE_ENV === `development`) {
     throw new Error(`You're likely using a version of React that doesn't support Hooks\n` + `Please update React and ReactDOM to 16.8.0 or later to use the useStaticQuery hook.`);
   }
@@ -87,7 +82,7 @@ useStaticQuery(graphql\`${query}\`);
 `);
   }
 
-  if ((_context$query = context[query]) !== null && _context$query !== void 0 && _context$query.data) {
+  if (context[query] && context[query].data) {
     return context[query].data;
   } else {
     throw new Error(`The result of this StaticQuery could not be fetched.\n\n` + `This is likely a bug in Gatsby and if refreshing the page does not fix it, ` + `please open an issue in https://github.com/gatsbyjs/gatsby/issues`);
