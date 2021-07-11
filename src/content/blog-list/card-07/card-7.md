@@ -1,20 +1,19 @@
 ---
 path: "/blog-list/card-02"
 id: 7
-slug: "Harvey Nichols Is Taking Personal Shopping Virtual With HERO®"
-icon: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileNike.svg"
-image: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/UNTUCKit-Header-1340x894.jpg"
+slug: "Three Partners With HERO® to Launch Three Store Now"
+icon: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/icRetailerTileThree.svg"
+image: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/Three-Header-1340x894.jpg"
 description: "In 2010, UNTUCKit Founder and Executive Chairman Chris Riccobono was on the hunt for a shirt that looked good untucked. He quickly realized that it was a hard style to get right—traditional men’s dress shirts were too long and looked sloppy when worn untucked."
 subTitle: "Newsroom"
 title: "Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO®"
-divClass: "item card-item d-flex item-2523 col-6 col-md-3"
-aClass: "card card-case-study text-white w-100 rounded-0 card-disabled"
+divClass: "item card-item d-flex item-227 col-6 col-md-3"
+aClass: "card card-case-study text-white w-100 rounded-0"
 figureClass: "card-case-img justify-content-center d-flex text-center mb-0"
-scriptSrc: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/icRetailerTileHarveyNichols.svg"
+scriptSrc: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/icRetailerTileThree.svg"
 date: "June 30,2021"
-div: true
-card: 2
-background: "#08205e"
+div: false
+background: "#111"
 ---
 
 <p>After hearing friends echo his frustrations, Chris came up with the idea for UNTUCKit: a polished yet casual shirt designed to be worn untucked. Chris quickly got to work re-engineering the dress shirt with the perfect untucked length to help men look sharp, even at their most casual.</p>

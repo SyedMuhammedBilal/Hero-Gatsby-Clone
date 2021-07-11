@@ -1,19 +1,19 @@
 ---
 path: "/blog-list/card-02"
 id: 17
-slug: "Accent Group Partners With HERO® to Bring Virtual Shopping to Its Global Brands"
-icon: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/08/icRetailerTileAccentGroup.svg"
-image: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/08/Accent-Group-Banner-1340x894.jpg"
+slug: "HERO® Helps Bring abc carpet & home to a New Generation of Shoppers"
+icon: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/icRetailerTileAbcCarpetAndHome.svg"
+image: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/Abc-home-Header-1340x894.jpg"
 description: "In 2010, UNTUCKit Founder and Executive Chairman Chris Riccobono was on the hunt for a shirt that looked good untucked. He quickly realized that it was a hard style to get right—traditional men’s dress shirts were too long and looked sloppy when worn untucked."
 subTitle: "Newsroom"
 title: "Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO®"
-divClass: "item card-item d-flex item-1093 col-6 col-md-3"
+divClass: "item card-item d-flex item-1682 col-6 col-md-3"
 aClass: "card card-case-study text-white w-100 rounded-0"
 figureClass: "card-case-img justify-content-center d-flex text-center mb-0"
-scriptSrc: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/08/icRetailerTileAccentGroup.svg"
+scriptSrc: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/icRetailerTileAbcCarpetAndHome.svg"
 date: "June 30,2021"
-div:  false
-background: "#111"
+div: false
+background: '#111'
 ---
 
 <p>After hearing friends echo his frustrations, Chris came up with the idea for UNTUCKit: a polished yet casual shirt designed to be worn untucked. Chris quickly got to work re-engineering the dress shirt with the perfect untucked length to help men look sharp, even at their most casual.</p>

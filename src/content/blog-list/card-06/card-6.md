@@ -1,20 +1,18 @@
 ---
 path: "/blog-list/card-02"
 id: 6
-slug: "Annoushka Brings Jewelry to Life Virtually With HERO®"
-icon: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/icRetailerTileAnnoushka.svg"
-image: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/Annoushka-Header-1340x894.jpg"
+slug: "Harvey Nichols Is Taking Personal Shopping Virtual With HERO®"
+icon: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileLevis.svg"
+image: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/UNTUCKit-Header-1340x894.jpg"
 description: "In 2010, UNTUCKit Founder and Executive Chairman Chris Riccobono was on the hunt for a shirt that looked good untucked. He quickly realized that it was a hard style to get right—traditional men’s dress shirts were too long and looked sloppy when worn untucked."
 subTitle: "Newsroom"
 title: "Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO®"
-divClass: "item card-item d-flex item-272 col-6 col-md-3"
-aClass: "card card-case-study text-white w-100 rounded-0"
+divClass: "item card-item d-flex item-2517 col-6 col-md-3"
+aClass: "card card-case-study text-white w-100 rounded-0 card-disabled"
 figureClass: "card-case-img justify-content-center d-flex text-center mb-0"
-scriptSrc: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/icRetailerTileAnnoushka.svg"
+scriptSrc: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileLevis.svg"
 date: "June 30,2021"
-div: false
-card: 2
-background: "#fca642"
+div: true
 ---
 
 <p>After hearing friends echo his frustrations, Chris came up with the idea for UNTUCKit: a polished yet casual shirt designed to be worn untucked. Chris quickly got to work re-engineering the dress shirt with the perfect untucked length to help men look sharp, even at their most casual.</p>
@@ -25,7 +23,7 @@ background: "#fca642"
 
 <p>After hearing friends echo his frustrations, Chris came up with the idea for UNTUCKit: a polished yet casual shirt designed to be worn untucked. Chris quickly got to work re-engineering the dress shirt with the perfect untucked length to help men look sharp, even at their most casual.</p>
 
-<p>Beyond reimagining the perfect untucked shirt length, Chris focused on reworking contoured hemlines, reinforced collars, and developing a signature sail.  Tying it all together is the amount of fits available for every body type: 50+ for every shape and size.</p>
+<p>Beyond reimagining the perfect untucked shirt length, Chris focused on reworking contoured hemlines, reinforced collars, and developing a signature sail. Tying it all together is the amount of fits available for every body type: 50+ for every shape and size.</p>
 
 <img src='https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/07/1-eXEUpHVSZfCYrXl0tc6WqQ-819x1024.jpeg' />
 

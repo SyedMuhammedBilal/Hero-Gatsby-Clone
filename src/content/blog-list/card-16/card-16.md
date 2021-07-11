@@ -2,15 +2,15 @@
 path: "/blog-list/card-02"
 id: 16
 slug: "Harvey Nichols Is Taking Personal Shopping Virtual With HERO®"
-icon: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileBerluti.svg"
+icon: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileClareV.svg"
 image: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/UNTUCKit-Header-1340x894.jpg"
 description: "In 2010, UNTUCKit Founder and Executive Chairman Chris Riccobono was on the hunt for a shirt that looked good untucked. He quickly realized that it was a hard style to get right—traditional men’s dress shirts were too long and looked sloppy when worn untucked."
 subTitle: "Newsroom"
 title: "Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO®"
-divClass: "item card-item d-flex item-2509 col-6 col-md-3"
+divClass: "item card-item d-flex item-2491 col-6 col-md-3"
 aClass: "card card-case-study text-white w-100 rounded-0 card-disabled"
 figureClass: "card-case-img justify-content-center d-flex text-center mb-0"
-scriptSrc: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileBerluti.svg"
+scriptSrc: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileClareV.svg"
 date: "June 30,2021"
 div: true
 ---

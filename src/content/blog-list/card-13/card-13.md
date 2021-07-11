@@ -1,19 +1,19 @@
 ---
 path: "/blog-list/card-02"
 id: 13
-slug: "Innersense Delivers the Hair Salon Experience Virtually With HERO®"
-icon: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileInnersense.svg"
-image: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/Innersense-Header6-1340x894.jpg"
+slug: "The Detox Market Brings Green Beauty to Online Shoppers With HERO®"
+icon: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileTheDetoxMarket.svg"
+image: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/The-Detox-Market-Header2-1340x894.jpg"
 description: "In 2010, UNTUCKit Founder and Executive Chairman Chris Riccobono was on the hunt for a shirt that looked good untucked. He quickly realized that it was a hard style to get right—traditional men’s dress shirts were too long and looked sloppy when worn untucked."
 subTitle: "Newsroom"
 title: "Axel Arigato Launches Virtual Shopping Experience in Partnership With HERO®"
-divClass: "item card-item d-flex item-2888 col-6 col-md-3"
+divClass: "item card-item d-flex item-2895 col-6 col-md-3"
 aClass: "card card-case-study text-white w-100 rounded-0"
 figureClass: "card-case-img justify-content-center d-flex text-center mb-0"
-scriptSrc: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileInnersense.svg"
+scriptSrc: "https://2hrmp9bzmmx3f0xil1wyssgx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/icRetailerTileTheDetoxMarket.svg"
 date: "June 30,2021"
 div: false
-background: "#846e50"
+background: "#4c8791"
 ---
 
 <p>After hearing friends echo his frustrations, Chris came up with the idea for UNTUCKit: a polished yet casual shirt designed to be worn untucked. Chris quickly got to work re-engineering the dress shirt with the perfect untucked length to help men look sharp, even at their most casual.</p>
